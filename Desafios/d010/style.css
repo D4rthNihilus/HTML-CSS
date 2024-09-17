@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Idroid';
+    src: url(fontes/idroid.otf) format(opentype);
+}
+body{
+    background-color:#3CD681;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+p{
+    text-indent: 35px;
+    text-align: justify;
+}
+
+img{
+    margin: auto;
+    text-align: center;
+}
+
+#bug-droid{
+    margin: auto 250px;
+    text-align: center;
+}
+
+header{
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom, #3CD681, #1A5C38);
+    padding: 10px;
+}
+
+h1{
+    font-weight: bold;
+}
+
+#subtitulo-principal{
+    width: 600px;
+    color: rgb(255, 255, 255);
+    background-image: none;
+    font: lighter 22px Arial, Verdana, sans-serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.637);
+    margin: auto;
+    padding: 10px;
+}
+
+#titulo-main{
+    font-family:'Idroid', 'Times New Roman', Times, serif;
+    color:#146d31;
+
+}
+
+h2{
+    font-family: 'Idroid', 'Times New Roman', Times, serif;
+    color:#146d31;
+    background-image: linear-gradient(to right, #acd8c0, white);
+    padding: 5px 10px;
+}
+
+nav{
+    text-align: left;
+    font-weight: bolder;
+    padding: 10px 10px 1px 10px;
+    margin-bottom: 1px;
+}
+
+nav > span{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.486);
+    margin: 20px 10px;
+}
+
+nav > span > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 2.5px;
+}
+nav > span > a:hover{
+    color: rgb(2, 85, 2);
+    background-color: #acd8c0;
+    padding: 10px 2.5px;
+}
+
+main{
+    max-width: 840px;
+    padding: 10px 0px;
+    margin: auto;
+    background-color: white;
+}
+
+#main-article{
+    margin: 20px;
+}
+
+.special{
+    color:#146d31;
+    font-weight: bold;
+}
+
+.link{
+    color:#146d31;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.link::after{
+    content: "🔗";
+}
+
+#aside-video{
+    padding: 10px;
+    background-color: darkgreen;
+    text-align: center;
+}
+
+iframe{
+    min-width: 750px;
+    min-height: 422px;
+
+}
+
+#article-final{
+    border-radius: 15px;
+}
+
+#aside-final{
+    background-color: #C5EBD6;
+    border-radius: 15px;
+    padding: 0px 0px 5px 0px;
+    margin: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.342);
+}
+
+#aside-final > p{
+    margin: 20px;
+}
+
+#subtitulo-aside{
+    color: white;
+    background-color: #2FA866;
+    background-image: none;
+    font-family:Arial, Helvetica, sans-serif, sans-serif;
+    font-weight: bold;
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px;
+}
+
+#finalp{
+    margin: 20px;
+}
+
+td{
+    padding: 0px 160px 0px 20px;
+}
+
+.marker{
+    font-weight: 900;
+}
+
+footer{
+    color: white;
+    background-color: #1A5C38;
+    padding: 10px;
+}
+
+footer > p{
+    text-align: center;
+    margin: auto;
+}

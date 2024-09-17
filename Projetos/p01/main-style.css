@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Bubbles";
+    src: url(./fonts/CuteBubble.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "Clown";
+    src: url("./fonts/Runaround Kid DEMO.otf") format("opentype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --amarelo: #ffef0d;
+    --rosa: #D60039;
+    --azulc: #00A5DB;
+    --azule:#134c5f;
+    --marrom:#407207;
+}
+
+body{
+    font-family: "Kanit", Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, var(--azule), var(--azulc));
+    margin: 0px;
+}
+
+img{
+    width: 500px;
+    margin: auto 150px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#main-clown{
+    width: 700px;
+    margin: auto 50px;
+}
+
+#origemp, #mascarasca {
+    margin: auto 170px;
+    text-align: center;
+}
+
+abbr{
+    font-weight: 900;
+    text-decoration:underline;
+    color: var(--marrom);
+}
+
+header{
+    background-image: radial-gradient(circle, var(--azulc), var(--amarelo), var(--rosa));
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+header > h1{
+    font-size: 6em;
+    font-family:"Bubbles", cursive;
+    padding: 10px;
+    margin: 0px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.377);
+}
+
+header > p{
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    margin: 0px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.377);
+}
+
+nav{
+    background-color: var(--azule);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.589);
+}
+
+nav a{
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a:hover{
+    color: var(--azulc);
+    background-color: #5c592e5d;
+    border-radius: 10px;
+    
+}
+
+main{
+    background-color: white;
+    line-height: 2em;
+    max-width: 840px;
+    margin: -20px auto;
+    padding-bottom: 20px;
+}
+
+main > article{
+    margin: 0px 20px;
+    padding-top: 20px;
+}
+
+article > h1{
+    font-family: "Clown", cursive;
+    font-size: 4em;
+    font-weight: normal;
+    text-align: center;
+    color: var(--rosa);
+    text-align: center;
+    text-shadow: 3px 3px 5px var(--amarelo);
+    margin: 20px;
+    line-height: 1em;
+    
+}
+
+article > h2{
+    font-size: 2em;
+    font-weight: normal;
+    font-family: "Clown";
+    letter-spacing: 5px;
+    color: var(--amarelo);
+    background-image: radial-gradient(circle, var(--azulc), transparent);
+    text-align: center;
+    padding: 5px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
+}
+
+article > h3{
+    color: var(--rosa);
+    font-weight: 900;
+}
+
+article > h4{
+    color:var(--azule);
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+
+#description{
+    text-align: center;
+    text-indent: 0px;
+    font-size: 1em;
+}
+
+article > p{
+    text-indent: 40px;
+}
+
+.topic{
+    font-weight: bold;
+    color: var(--marrom);
+}
+
+aside{
+    background-color: var(--azule);
+    color: white;
+    margin: auto;
+    max-width:840px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+aside > h2{
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+aside img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: white;
+}
+
+aside img:hover{
+    border-style: dotted;
+    border-width: 5px;
+    border-color: #D60039;
+}
+
+footer{
+    background-color: var(--amarelo);
+    color:var(--rosa);
+    font-weight: 900;
+    padding: 10px;
+    text-align: center;
+}

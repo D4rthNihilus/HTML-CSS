@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            font-family: bolder;
+            font-size: 3em;
+        }
+
+        div > img{
+            display: none;
+        }
+
+        div:hover > img {
+            display: block;
+            width: 300px;;
+        }
+
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p width: 300px>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56789d72-b131-432e-9be4-5e30b6cf4cce/dg1ivz8-92e22894-219c-480f-a7a8-03c50946d76a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU2Nzg5ZDcyLWIxMzEtNDMyZS05YmU0LTVlMzBiNmNmNGNjZVwvZGcxaXZ6OC05MmUyMjg5NC0yMTljLTQ4MGYtYTdhOC0wM2M1MDk0NmQ3NmEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._v2mW0r2ol7E8VUW2nDnG-fLqCRGdwPZGy1jxC6bTZg" alt="ghost" width: 3
+        00px>
+    </div>
+</body>
+</html>

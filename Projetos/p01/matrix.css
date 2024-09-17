@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Bubbles";
+    src: url(./fonts/CuteBubble.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "Clown";
+    src: url("./fonts/Runaround Kid DEMO.otf") format("opentype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Kanit", Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    margin: 0px;
+}
+
+img{
+    width: 600px;
+    margin: auto 120px;
+    text-align: center;
+    border-style:groove;
+    border-color: var(--cor3);
+    box-shadow: 3px 3px 5px var(--cor4);
+}
+
+abbr{
+    color: var(--cor4);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header{
+    background-image: radial-gradient(circle, var(--cor3) 10%, var(--cor4), var(--cor2), var(--cor1));
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+header > h1{
+    font-size: 6em;
+    font-family:"Bubbles", cursive;
+    padding: 10px;
+    margin: 0px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.377);
+}
+
+header > p{
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    margin: 0px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.377);
+}
+
+nav{
+    background-color: var(--cor3);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.589);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.589);
+}
+
+nav a{
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a:hover{
+    color: var(--azulc);
+    background-color: #5c592e5d;
+    border-radius: 10px;
+}
+
+main{
+    background-color: white;
+    margin: -20px auto;
+    max-width: 840px;
+    padding: 20px;
+}
+
+main h2{
+    color: var(--cor2);
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 900;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 2em;
+}
+
+main a{
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+main a:hover{
+    color: var(--cor3);
+    text-decoration: underline;
+}

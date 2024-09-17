@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Test</title>
+    <style>
+        #main{
+            text-align: center;
+            background-color: black;
+            color: red;
+            font-size: 1.5em;
+        }
+        #surprise > p:hover{
+            color: white;
+        }
+
+
+        .click-content{
+            display: none;
+            color: white;
+            margin: auto;
+        }
+
+        #surprise:hover > .click-content{
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>HELLO THERE!</h1>
+        <p>The dark side of the force has many habilities, some are considered unnnatural!</p>
+        <div id="surprise">
+            <p>Click here!</p>
+            <img src="https://static.wikia.nocookie.net/shaniverse/images/2/2f/Darth_Sidious.jpg/revision/latest?cb=20210120233736" alt="darth sidious" class="click-content" width="380px;">
+            <p class="click-content">POWEEER!!! UNLIMITED POWEEER!!!</p>
+
+        </div>
+    </div>
+</body>
+</html>

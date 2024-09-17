@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            color:rgb(39, 126, 97);
+            font-family: 'Matemasie', 'Times New Roman', Times, serif;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.11);
+        }
+        nav{
+            background-color: rgb(194, 240, 102);
+            padding: 3px;
+            text-align: center;
+            box-shadow:3px 3px 7px  rgb(155, 190, 83);
+            border-radius: 20px 0px;
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight:bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: rgb(36, 2, 2);
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 20px 0px 0px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.247);
+        }
+        #assuntos{
+            background-color: yellowgreen;
+            font-weight: bolder;
+            text-align:center
+        }
+        article{
+            background-color: aquamarine;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: aqua;
+        }
+        #bumblebee > p{
+            font-weight: bolder;
+            background-color: rgb(255, 208, 0);
+            text-align:center;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        #bola{
+            height:100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <a href="#">Link4</a>
+            <a href="#">Link5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+        <p>ESPORTES POLÍTICA TECNOLOGIA</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolores perspiciatis delectus maiores, eos obcaecati velit temporibus qui, voluptas doloremque veritatis? Perspiciatis commodi exercitationem aperiam deserunt, facere sequi error tempore!</p>
+                <aside>
+                    <p>Artigo escrito por Rodolfo Silva da Cunha</p>
+                </aside>
+            </article>
+
+        </section>
+        <aside id="bumblebee">
+            <p>The Humble Bumblebee</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&reg; Desenvolvido por Rafa Crois &copy;</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>
