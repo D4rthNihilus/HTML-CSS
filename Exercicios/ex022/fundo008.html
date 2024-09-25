@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com Background</title>
+
+<style>
+    article{
+        background-color: rgb(5, 29, 5);
+        width: 100% 100%;
+        height: 100px;
+        padding: 20px;
+    }
+
+    p.header{
+        font-weight: bolder;
+        font-size: 1.5em;
+        text-align: center;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        background-position: center center;
+
+        transform: translate(-50%, -100%);
+    }
+
+    .menu{
+        height: 100px;
+        width: 310px;
+        margin: 0px 10px;
+        background-color: red;
+        display: inline-block;
+        border-radius: 15px;
+        position: relative;
+        color: white;
+        text-align: center;
+    }
+
+    #box3{
+        position:absolute;
+        left: 50%;
+        background-position: 100%;
+        transform: translate(100%);
+    }
+
+    #main{
+        margin: 10px 100px;
+    }
+
+    .side{
+        margin: auto;
+        display: inline-block;
+        max-width: 50%;
+        text-align: justify;
+    }
+
+    div>img{
+        position: absolute;
+
+        transform: translate(90px,-90%);
+    }
+
+</style>
+
+</head>
+<body>
+    <article>
+        <aside class="menu" id="box1">
+            <p class="header">Hello There!</p>
+        </aside>
+
+        <aside class="menu" id="box2">
+            <p class="header">I Have the Hight Ground!</p>
+        </aside>
+
+        <aside class="menu" id="box3">
+            <p class="header">Unlimited Power!</p>
+        </aside>
+    </article>
+
+
+    <div id="main">
+        <div class= "side">
+            <p>The dark side of the force has many habilities, some are considered unnatural! Power! Unlimited poweeerr!!! Obi Wan never told you what happened to your father! He told me enough. He told me you killed him! No, I'm you father! Noooooooooo!!!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto itaque nemo quos veniam beatae, quidem commodi velit, illo minima assumenda voluptas adipisci ab totam quo dignissimos earum nisi voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores architecto itaque nemo quos veniam beatae, quidem commodi velit, illo minima assumenda voluptas adipisci ab totam quo dignissimos earum nisi voluptatem!</p>
+        </div>
+
+        <div class="side">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXIsvMJKdW7-otzF_Mv3nj1RXcDus-kaiSzA&s" alt="Darth Sisious">
+        </div>
+    </div>
+
+</body>
+</html>
