@@ -7,3 +7,30 @@
 main{
     max-width: 840px;
 }
+
+article{
+    padding: 20px 0px;
+}
+
+article p{
+    text-align: justify;
+    text-indent: 30px;
+}
+
+div#content, div#infobox{
+    display:inline-block;
+
+    max-width: 300px;
+    margin: 5px;
+    padding: 5px;
+
+    background-color: beige;
+}
+
+div#content{
+    max-width: 480px;
+}
+
+#imgmatheus{
+    max-width: 250px;
+}
