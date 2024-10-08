@@ -5,11 +5,12 @@
 }
 
 main{
-    max-width: 840px;
+    max-width: 860px;
 }
 
 article{
     padding: 20px 0px;
+    background-color: tan;
 }
 
 article p{
@@ -19,18 +20,28 @@ article p{
 
 div#content, div#infobox{
     display:inline-block;
-
-    max-width: 300px;
-    margin: 5px;
     padding: 5px;
+    margin: 0px;
 
     background-color: beige;
 }
 
 div#content{
-    max-width: 480px;
+    max-width: 55%;
+}
+
+div#infobox{
+    max-width: 42.2%;
 }
 
 #imgmatheus{
     max-width: 250px;
+}
+
+table th{
+    text-align: left;
+}
+
+colgroup > col#col1{
+    width: 130px;
 }
