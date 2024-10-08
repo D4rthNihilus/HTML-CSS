@@ -1,29 +1,90 @@
 @charset "UTF-8";
 
 *{
-    margin: auto;
+    margin: auto
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+a{
+    padding:0px 5px;
+    text-decoration: none;
+    color: #BF5F0F;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #0A4414;
+    text-decoration: underline;
+}
+
+abbr{
+    color: #0A4414;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+abbr:hover{
+        color: #BF5F0F;
+}
+
+nav{
+    display: block;
+    margin: 5px -20px 5px 20px;
+    font-size: 0.8em;
+}
+
+div#navleft{
+    text-align: left;
+    display: inline-block;
+    margin-right: 48%;
+    max-width: 840px;
+}
+
+div#navright{
+    text-align: justify;
+    display: inline-block;
+}
+
+main>section>h1{
+    text-align: center;
 }
 
 main{
     max-width: 860px;
+    background-color: white;
+}
+
+main>section>h1, hr{
+    margin: 5px 20px;
 }
 
 article{
     padding: 20px 0px;
-    background-color: tan;
+    position: relative;
+    margin: 0px 20px;
 }
 
-article p{
+article>div>p{
     text-align: justify;
     text-indent: 30px;
+    line-height: 2em;
+    font-size: 1.1em;
+}
+
+article>div>h2{
+    text-align: left;
+    line-height: 2em;
+    font-size: 1.5em;
 }
 
 div#content, div#infobox{
     display:inline-block;
-    padding: 5px;
+    padding: 10px 15px;
     margin: 0px;
-
-    background-color: beige;
 }
 
 div#content{
@@ -31,17 +92,75 @@ div#content{
 }
 
 div#infobox{
-    max-width: 42.2%;
+    max-width: 42.3%;
+    position: absolute;
+    border: 1px solid black;
+}
+
+div#infobox>h1{
+    color: white;
+    text-align: center;
+    background: #FD5100;
+    padding: 5px;
+}
+
+div#infobox>p{
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+#img{
+    text-align: center;
+    font-size: 1em;
+    padding: 5px;
+}
+
+#ibimgcaption{
+
+}
+
+div#infobox>table>caption{
+    color: white;
+    text-align: center;
+    background: #FD5100;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+table {
+    position: relative;
 }
 
 #imgmatheus{
     max-width: 250px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%);
 }
 
-table th{
+table th, td{
     text-align: left;
+    padding: 5px;
+    font-size: 1em;
 }
 
 colgroup > col#col1{
     width: 130px;
+}
+
+picture.characterimg{
+    display:block;
+    position: relative;
+}
+
+picture.characterimg>img{
+    position:absolute;
+    max-width: 300px;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%);
 }
