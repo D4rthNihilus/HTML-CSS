@@ -156,11 +156,21 @@ picture.characterimg{
     position: relative;
 }
 
-picture.characterimg>img{
+/*picture.characterimg>img{
     position:absolute;
     max-width: 300px;
     left: 50%;
     top: 50%;
 
     transform: translate(-50%);
+}*/
+
+picture>img{
+    width: 300px;
+    margin: 0% 30%;
+}
+
+picture > p {
+    margin: auto;
+    text-align: center;
 }
