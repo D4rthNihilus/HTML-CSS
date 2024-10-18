@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com iframes</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px 40px;
+        }
+
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(128, 30, 0);
+            background-color: tan;
+            margin: auto;
+            text-align: center;
+            font-weight: 900;
+            font-size: 2.5em;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        ul{
+            column-count: 7;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 2px;
+        }
+
+        div.box{
+            padding: 8px;
+            margin:5px;
+            background-color: green;
+            width: 140px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bolder;
+            display: inline-block;
+        }
+
+        div.box:hover{
+            background-color: rgb(3, 41, 3);
+        }
+
+        a:active{
+            color: brown;
+        }
+
+
+        iframe{
+            border-radius: 16px;
+            border: 3px solid rgb(185, 125, 14);
+            border-style: dotted;
+            display: block;
+            margin: auto;
+            width: 600px;
+            height: 340px;
+        }
+
+        div#iframebox{
+            background-image: url("https://img.freepik.com/premium-vector/green-checkered-pattern-background_609989-2938.jpg");
+            padding: 10px 0px;
+        }
+
+    </style>
+</head>
+<body>
+   <h1>EL CHAVO DEL OCHO</h1>
+   <h2>Clic en un de los nombres para ver la imagen del personage</h2>
+
+   <ul type="none">
+        <li>
+            <div class="box"><a href="images/chavo.jpeg" target="frame">Chavo</a></div>
+        </li>
+
+        <li>
+            <div class="box"><a href="images/quico.webp" target="frame">Quico</a></div>
+        </li>
+
+        <li>
+            <div class="box"><a href="images/chilindrina.webp" target="frame">Chilindrina</a></div>
+        </li>
+
+        <li>
+            <div class="box"><a href="images/donramon.webp" target="frame">Don Ramón</a></div>
+        </li>
+
+        <li>
+            <div class="box"><a href="images/donaflorinda.jpg" target="frame">Doña Florinda</a></div>
+        </li>
+
+        <li>
+            <div class="box"><a href="images/profesorjirafales.jpg" target="frame">Profesor Jirafales</a></div>
+        </li>
+
+        <li>
+            <div class="box"><a href="images/brujadel71.webp" target="frame">Bruja del 71</a></div>
+        </li>
+
+        <li>
+            <div class="box"><a href="images/senorbarriga.jpg" target="frame">Señor Bariga</a></div>
+        </li>
+
+        <li>
+            <div class="box"><a href="images/nono.jpg" target="frame">Ñoño</a></div>
+        </li>
+
+        <li>
+            <div class="box"><a href="images/popis.avif" target="frame">Popis</a></div>
+        </li>
+
+        <li>
+            <div class="box"><a href="images/godinez.webp" target="frame">Godínez</a></div>
+        </li>
+
+        <li>
+            <div class="box"><a href="images/paty.jpg" target="frame">Paty</a></div>
+        </li>
+
+        <li>
+            <div class="box"><a href="images/gloria.png" target="frame">Gloria</a></div>
+        </li>
+
+        <li>
+            <div class="box"><a href="images/jaimito.webp" target="frame">Jaimito</a></div>
+        </li>
+   </ul>
+
+   <div id="iframebox">
+       <iframe srcdoc="<img src='images/vecindaddelchavo.png' width='600'>" name="frame">
+        Infelizemnte o seu navegador não é compatível com esse iframe!
+       </iframe>
+   </div>
+</body>
+</html>
