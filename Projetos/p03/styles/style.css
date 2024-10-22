@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(0, 0, 0) url("../images/tv.webp") center top/contain no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+section#tv{
+    position: relative;
+}
+
+section#tv > iframe{
+    border: 0px;;
+    width: 400px;
+    height:229px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, 62%);
+}
+
+section#channels{
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    max-width: 1020px;
+    background-color: rgba(0, 0, 0, 0.226);
+    border-radius: 20px;
+
+    position: absolute;
+    top: 80%;
+    left: 10%
+}
+
+a{
+    text-decoration: none;
+    margin: 0px 2px;
+    text-align: center;
+}
+
+a>img{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.356);
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.479);
+}
+
+a>img:hover{
+    background-color: rgba(255, 255, 255, 0.822);
+    border: 3px solid rgb(8, 49, 124);
+    box-sizing: content-box;
+}
