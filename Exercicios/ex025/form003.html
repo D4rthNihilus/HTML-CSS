@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+   <h1>Testes com formulários</h1> 
+   <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iname">Nome: </label>
+            <input type="text" name="name" id="iname" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="igrade">Média: </label>
+            <input type="number" name="grade" id="igrade" min="0" max="10" placeholder="0 a 10" step="0.01" required>
+        </p>
+        <p>
+            <label for="iperiod">Período</label>
+            <input type="month" name="period" id="iperiod" value="2024-10">
+        </p>
+        <p>
+            <label for="iday">Dia do exame: </label>
+            <input type="date" name="day" id="iday" value="2024-10-29">
+        </p>
+        <p>
+            <label for="itime">Hora do exame: </label>
+            <input type="time" name="time" id="itime" value="10:00">
+        </p>
+        <p>
+            <label for="idatetime">Data e hora do próximo exame: </label>
+            <input type="datetime-local" name="datetime" id="idatetime" value="2024-11-30 10:30">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+   </form>
+</body>
+</html>

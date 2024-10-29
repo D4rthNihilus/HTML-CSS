@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com formulários</title>
+</head>
+<body>
+    <h1>Matricule-se para estudar na PHU (PorkHouse University)</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="iname">Nome: </label>
+                <input type="text" name="name" id="iname" autocomplete="name" minlength="4" maxlength="30" required>
+            </div>
+            <div>
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail" minlenght="14" maxlength="30" autocomplete="email" required>
+            </div>
+            <div>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" pattern="^\+\d{2} \(\d{2}\) \d{5}-\d{4}$" autocomplete="tel" required>
+            </div>
+            <div>
+                <p>Estado civil:</p>
+                <label for="imaritalstatus">solteiro(a)</label>
+                <input type="checkbox" name="maritalstatus" id="imaritalstatus">
+                <label for="imaritalstatus">casado(a)</label>
+                <input type="checkbox" name="maritalstatus" id="imaritalstatus">
+                <label for="imaritalstatus">divorciado(a)</label>
+                <input type="checkbox" name="maritalstatus" id="imaritalstatus">
+                <label for="imaritalstatus">viúvo(a)</label>
+                <input type="checkbox" name="maritalstatus" id="imaritalstatus">
+            </div>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Dados financeiros</legend>
+            <div>
+                <label for="isalary">Salário</label>
+                <input type="number" name="salary" id="isalary" min="0.0" required>
+            </div>
+        </fieldset>
+    </fieldset>
+    </form>
+</body>
+</html>
