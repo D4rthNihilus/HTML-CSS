@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de formulário básico</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input{
+            display: block;
+            width: 400px;
+        }
+
+        #sendbutton{
+            width: 100px;
+            padding: 5px;
+            background-color: darkolivegreen;
+            color: white;
+            border: 1px solid rgb(80, 139, 8);
+            box-shadow: 2px 2px 3px rgb(000,000,000, 0.50);
+        }
+
+        #sendbutton:hover{
+            background-color: rgb(32, 46, 5);
+        }
+
+        #sendbutton:active{
+            background-color: rgb(0, 0, 0);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p><label for="iname">Nome completo:</label> 
+            <input type="text" name="name" id="iname">
+        </p>
+        <p><label for="iage">Idade:</label> 
+            <input type="number" name="age" id="iage">
+        </p>
+        <p><label for="iphone">Telefone:</label> 
+            <input type="text" name="phone" id="phone">
+        </p>
+        <p><label for="iemail">Email:</label> 
+            <input type="text" name="email" id="iemail">
+        </p>
+        <p><label for="iadress">Endereço:</label> 
+            <input type="text" name="adress" id="iadress">
+        </p>
+        <p>
+            <input type="submit" value="Enviar" id="sendbutton">
+        </p>
+    </form>
+</body>
+</html>
