@@ -4,6 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testes com formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form label,  input, p{
+            margin: 10px 0px;
+        }
+
+        form legend{
+            font-weight: bolder;
+        }
+
+        li{
+            font-size: 0.9em;
+        }
+
+        input.button{
+            padding: 10px;
+            font-weight: bolder;
+            color: aliceblue;
+            border-radius: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.61);
+            width: 100px;
+        }
+
+        input#send{
+            background-color: green;
+        }
+        input#send:hover{
+            background-color: rgb(2, 41, 2);
+        }
+        input#clear{
+            background-color: rgb(35, 175, 175);
+            margin-left: 10px;
+            margin-right: 60px;
+        }
+        input#clear:hover{
+            background-color: rgb(10, 48, 48);
+        }
+    </style>
 </head>
 <body>
     <h1>Matricule-se para estudar na PHU (PorkHouse University)</h1>
@@ -12,15 +53,15 @@
             <legend>Dados Pessoais</legend>
             <div>
                 <label for="iname">Nome: </label>
-                <input type="text" name="name" id="iname" autocomplete="name" minlength="4" maxlength="30" required>
+                <input type="text" name="name" id="iname" autocomplete="name" minlength="4" maxlength="50" required placeholder="Seu nome completo" size="40">
             </div>
             <div>
                 <label for="iemail">Email: </label>
-                <input type="email" name="email" id="iemail" minlenght="14" maxlength="30" autocomplete="email" required>
+                <input type="email" name="email" id="iemail" minlenght="14" maxlength="30" autocomplete="email"  placeholder="Seu email pessoal" size="40">
             </div>
             <div>
                 <label for="itel">Telefone: </label>
-                <input type="tel" name="tel" id="itel" pattern="^\+\d{2} \(\d{2}\) \d{5}-\d{4}$" autocomplete="tel" required>
+                <input type="tel" name="tel" id="itel" pattern="^\+\d{2} \(\d{2}\) \d{5}-\d{4}$" autocomplete="tel" placeholder="+xx (xx) xxxxx-xxxx">
             </div>
             <div>
                 <p>Estado civil:</p>
@@ -33,16 +74,71 @@
                 <label for="imaritalstatus">viúvo(a)</label>
                 <input type="checkbox" name="maritalstatus" id="imaritalstatus">
             </div>
-    </form>
-    <form>
+        </fieldset>
         <fieldset>
-            <legend>Dados financeiros</legend>
+            <legend>Dados Escolares</legend>
             <div>
-                <label for="isalary">Salário</label>
-                <input type="number" name="salary" id="isalary" min="0.0" required>
+                <label for="igrade">Escolaridade:</label>
+                <input type="text" name="grade" id="igrade" required maxlength="30" value="Ensino Médio Completo">
+            </div>
+            <div>
+                <label for="icourse1">Curso 1:</label>
+                <input type="text" name="course1" id="icourse1" maxlength="30" size="30" placeholder="Deixe em branco caso não tenha">
+            </div>
+            <div>
+                <label for="idate1">Data de conclusão do curso 1:</label>
+                <br>
+                <input type="date" name="date1" id="idate1">
+            </div>
+            <div>
+                <label for="icourse2">Curso 2:</label>
+                <input type="text" name="course2" id="icourse2" maxlength="30" size="30" placeholder="Deixe em branco caso não tenha">
+            </div>
+            <div>
+                <label for="idate2">Data de conclusão do curso 2:</label>
+                <br>
+                <input type="date" name="date2" id="idate2">
+            </div>
+            <div>
+                <label for="icourse3">Curso 3:</label>
+                <input type="text" name="course3" id="icourse3" maxlength="30" size="30" placeholder="Deixe em branco caso não tenha">
+            </div>
+            <div>
+                <label for="idate3">Data de conclusão do curso 3:</label>
+                <br>
+                <input type="date" name="date3" id="idate3">
+            </div>
+            <div>
+                <label for="ilanguage">Idiomas: </label>
+                <br>
+                Inglês básico <input type="checkbox">  
+                Inglês intremediário <input type="checkbox">
+                Inglês avançado <input type="checkbox">
+                Espanhol básico <input type="checkbox">
+                Espanhol intremediário <input type="checkbox">
+                Espanhol avançado <input type="checkbox">
             </div>
         </fieldset>
-    </fieldset>
+        <fieldset>
+            <legend>Dados Residenciais</legend>
+            <div>
+                <label for="iadress">Endereço: </label>
+                <input type="text" maxlength="100" size="" autocomplete="address-line3" placeholder="Rua - Bairro - Cidade - Unidade Federativa - País">
+            </div>
+            <div>
+                <label for="ifamily">Número de ocupantes da residência: </label>
+                <input type="number" min="1" max="10" placeholder="1 a 10">
+            </div>
+
+            <label for="isalary">Renda familiar total: </label>
+            <br>
+            <li>Menos de 1 salário <input type="checkbox" name="salary" id="isalary"></li>
+            <li>De 1 a 2 salários <input type="checkbox" name="salary" id="isalary"></li>
+            <li>de 3 a 4 salários <input type="checkbox" name="salary" id="isalary"></li>
+            <li>Acima de 4 salários <input type="checkbox" name="salary" id="isalary"></li>
+        </fieldset>
+        <input type="reset" value="Limpar" class="button" id="clear">
+        <input type="submit" value="Enviar" class="button" id="send">
     </form>
 </body>
 </html>

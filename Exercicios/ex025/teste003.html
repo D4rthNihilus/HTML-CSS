@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com formulários</title>
+
+    <style>
+        div{
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pesquisa Acadêmica</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="iname">Nome: </label>
+                <input type="text" name="name" id="iname" minlength="4" maxlength="50" autocomplete="name">
+            </div>
+            <div>
+                <label for="iage">Idade: </label>
+                <input type="number" name="age" id="iage" min="5" max="120">
+            </div>
+            <div>
+                <p>Gênero:</p>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Maculino </label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Feminino </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Saúde</legend>
+            <p>Qual(is) atividade(s) física(s) você pratica?</p>
+            <input type="checkbox" name="sed" id="ised">
+            <label for="ised">Nenhuma</label>
+            <br>
+            <input type="checkbox" name="cam" id="icam">
+            <label for="icam">Caminhada</label>
+            <br>
+            <input type="checkbox" name="acad" id="iacad">
+            <label for="iacad">Academia</label>
+            <br>
+            <input type="checkbox" name="nat" id="inat">
+            <label for="inat">Natação</label>
+            <br>
+            <input type="checkbox" name="ball" id="iball">
+            <label for="iball">Futebol</label>
+            <br>
+            <input type="checkbox" name="basq" id="ibasq">
+            <label for="ibasq">Basquete</label>
+            <br>
+            <input type="checkbox" name="mar" id="imar">
+            <label for="imar">Artes Marciais</label>
+            <br>
+            <input type="checkbox" name="oth" id="ioth">
+            <label for="ioth">Outra</label>
+            <br>
+
+            <p>Como é a sua alimentação?</p>
+            <input type="radio" name="fruits" id="likef">
+            <label for="likef">Amo frutas</label>
+            <input type="radio" name="fruits" id="hatef">
+            <label for="hatef">Detesto frutas</label>
+            <input type="radio" name="fruits" id="kindaf">
+            <label for="kindaf">Gosto de poucas frutas</label>
+            <br>
+            <input type="radio" name="vegetables" id="likev">
+            <label for="likev">Amo verduras</label>
+            <input type="radio" name="vegetables" id="hatev">
+            <label for="hatev">Detesto verduras</label>
+            <input type="radio" name="vegetables" id="kindav">
+            <label for="kinda">Gosto de poucas verduras</label>
+            <br>
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
