@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'bloody';
+    src: url('../fonts/BLOODY.TTF') format(truetype);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: black;
+    background-image: linear-gradient(to bottom, rgb(184, 6, 6), rgb(190, 53, 11), rgb(240, 146, 6), rgb(236, 236, 7), rgb(157, 223, 5));
+    padding: 20px;
+    color: white;
+}
+
+header > div#menusymbol{
+    font-size: 3em;
+    display: inline-block;
+    margin: 0px;
+    text-align: left;
+}
+
+header > div#menusymbol > p{
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.438);
+}
+
+header > div#menusymbol > p:hover{
+    color: darkgray;
+}
+
+header > div#dh1 {
+    display: inline-block;
+    margin-left: 20%;
+    text-align: center;
+    
+}
+
+header > div#dh1 > h1 {
+    font-family: 'bloody', Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px 7px rgb(255, 0, 170);
+    font-size: 3em;
+    font-weight: 900;
+    color: rgb(105, 30, 53);
+}
+
+article#whoscrash{
+    background-color: orange;
+    color: rgb(0, 81, 255);
+}
+article#whosjack{
+    background-color: black;
+    color: white;
+}
+
+img.whoscharimg{
+    width: 300px;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: white;
+    border-radius: 50%;
+}
