@@ -71,10 +71,30 @@ main{
 
 main > article > h2 {
     padding-bottom: 20px;
+    text-align: center;
+    color: rgb(1, 65, 1);
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
 }
 
 article > p {
     text-align: justify;
     text-indent: 20px;
     margin-bottom: 20px;
+}
+
+div#picture {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 340px;
+}
+
+div#picture > img {
+    border-radius: 10px;
+    margin: 10px;
+    width: 380px;
+
 }
