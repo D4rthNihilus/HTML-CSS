@@ -169,6 +169,10 @@ p.imgcaption{
     font-size: 0.8em;
 }
 
+#development1, #development2 {
+    width: 100vw;
+}
+
 #finalsection{
     margin-bottom: 100px;
 }
