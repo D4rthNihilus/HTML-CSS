@@ -12,8 +12,10 @@
 
 body, html{
     margin-top: 20px;
+    margin-left: 5px;
     background-color: #176144;
     width: 100vw;
+    height: 100vh;
 }
 
 header {
@@ -90,15 +92,15 @@ main > section > article > div#introduction {
     display: inline-block;
     background-color: red;
     height: 550px;
-    width: 55%;
+    width: 50%;
 }
 
 main > section > article > div#infobox {
     display: inline-block;
-    width: 44.21%;
+    width: 49%;
     height: 550px;
     background-color: blue;
-    transform: translate(-0.5%, -84.4%)
+    transform: translate(-0.5%, -97.5%)
 }
 
 main > section > article > div#development1 {
