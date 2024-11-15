@@ -99,6 +99,7 @@ div#infobox{
     max-width: 42.3%;
     position: absolute;
     border: 1px solid black;
+    height: 900px;
 }
 
 div#infobox>h1{
