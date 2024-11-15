@@ -105,7 +105,7 @@ main > section > article > div#introduction > p {
 main > section > article > div#infobox {
     display: inline-block;
     position: absolute;
-    left: 50%;
+    transform: translate(50%, 0%);
     width: 50%;
     height: 750px;
     background-color: blue;
