@@ -90,6 +90,7 @@ main > section > article {
 
 main > section > article > div#introduction {
     display: inline-block;
+    position: absolute;
     background-color: red;
     height: 550px;
     width: 50%;
@@ -98,10 +99,11 @@ main > section > article > div#introduction {
 main > section > article > div#infobox {
     display: inline-block;
     position: absolute;
-    width: 50%;
+    width: 49%;
     height: 550px;
     background-color: blue;
-    top: -600px;
+    top: 212px;
+    left: 260px;
 }
 
 main > section > article > div#development1 {
