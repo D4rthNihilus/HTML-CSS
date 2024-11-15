@@ -7,89 +7,131 @@
 
 * {
     margin: 0px;
-    padding: 10px;
+    padding: 0px;
 }
 
-header > div#icon-tonpedia {
-    display: inline-block;
+body, html{
+    margin-top: 20px;
+    background-color: #176144;
+    width: 100vw;
+}
+
+header {
     position: relative;
+    background-color: #176144;
+    padding: 10px;
+    margin: auto;
+    height: 100px;
 }
 
+header > span {
+    position: absolute;
+    top: 20%;
+    color: white;
+}
 
-div#icon-tonpedia > img {
-    width: 50px;
+header > span:hover {
+    color: lightgray
+}
+
+header > div#icon-tonpedia > img {
+    display: inline-block;
+    width: 60px;
     border-radius: 50%;
 
     position: absolute;
-    top: -150%;
-    left: -10px;
+    top: 0.5%;
+    left: 50px;
 }
 
 header > div#tonpedia-title {
-    display: inline-block;
-    position: relative;
-}
-
-div#tonpedia-title > div#tonpedia-block {
-    font-family: 'tabarra';
-    margin-left: 10px;
-    width: 180px;
-    text-align: center;
-
+    color: white;
     position: absolute;
-    top: -100%;
+    left: 30%;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'tabarra';
 }
 
-div#tonpedia-block > h1 {
+div#tonpedia-title > h1{
     font-size: 1.5em;
-    line-height: 0px;
 }
 
-div#tonpedia-block > h2 {
+div#tonpedia-title > h2{
     font-size: 0.5em;
 }
 
+div#search-bar {
+    position: absolute;
+    top: 60%;
+    width: 100vw;
+}
+
+div#search-bar > input#isearch {
+    padding: 5px;
+    width: 70vw;
+    display: inline-block;
+}
+
+div#search-bar > input#submit{
+    padding: 5px;
+    display: inline-block;
+    width: 20vw;
+}
+
+main {
+    background-color: white;
+}
+
 main > section > article {
-    position: relative;
 }
 
 main > section > article > div#introduction {
     display: inline-block;
-    width: 50vw;
-    position: absolute;
-    left: -10%;
-    background-color: blue;
-} 
+    background-color: red;
+    height: 550px;
+    width: 55%;
+}
 
 main > section > article > div#infobox {
     display: inline-block;
-    width: 43vw;
-    position: absolute;
-    left: 51%;
-    background-color: yellow;
-    height: 745px;
-} 
+    width: 44.21%;
+    height: 550px;
+    background-color: blue;
+    transform: translate(-0.5%, -84.4%)
+}
 
 main > section > article > div#development1 {
-    background-color: red;
     position: absolute;
-    top: 780px;
-    left: -10%;
-    width: 92vw;
+    width: 100vw;
+    padding-top: 50px;
+    background-color: yellow;
+    top: 760px;
 }
 
 main > section > article > div#development2 {
-    background-color: green;
-    position: absolute;
-    top: 1700px;
-    left: -10%;
-    width: 92vw;
+    background-color: orange;
+    margin-top: 280px;
+    padding-top: 50px;
 }
 
 main > section#finalsection > aside#references {
-    background-color: purple;
-    position: absolute;
-    top: 4290px;
-    left: -0.5%;
-    width: 92.5vw;
+    background-color: cyan;
+    padding-top: 50px;
+}
+
+main > section#finalsection > aside#bibliography {
+    background-color: rgb(204, 80, 157);
+    padding-top: 50px;
+}
+
+main > section#finalsection > aside#seemore {
+    background-color: rgb(80, 204, 136);
+    padding-top: 50px;
+}
+
+footer {
+    margin-top: -20px;
+    background-color: blueviolet;
+    padding-top: 50px;
 }
