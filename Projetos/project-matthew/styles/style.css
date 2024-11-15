@@ -101,7 +101,7 @@ main > section > article > div#infobox {
     width: 50%;
     height: 550px;
     background-color: blue;
-    transform: translate(0.5%, -100%)
+    transform: translate(0.5%, -350px)
 }
 
 main > section > article > div#development1 {
