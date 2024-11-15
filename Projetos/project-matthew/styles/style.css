@@ -102,8 +102,8 @@ main > section > article > div#infobox {
     width: 50%;
     height: 550px;
     background-color: blue;
-    top: 212px;
-    left: 260px;
+    top: 200px;
+    left: 200px;
 }
 
 main > section > article > div#development1 {
