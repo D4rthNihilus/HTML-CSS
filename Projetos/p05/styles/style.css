@@ -25,10 +25,15 @@ div#mobile > img {
     height: 90vh;
     position: absolute;
     top: 17%;
-    left: -20%;
 }
 
 ul#aliens {
-    column-count: 2;
+    column-count: 5;
     list-style-type: none;
+}
+
+ul#aliens > li > a > img {
+    size: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
 }
