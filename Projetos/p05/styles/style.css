@@ -10,7 +10,6 @@ body {
     margin: 20px;
 
     background: black url("../images/space-background.jpeg") no-repeat;
-    background-size: cover;
     background-position: top center;
 }
 
