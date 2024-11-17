@@ -20,7 +20,7 @@ h1 {
 }
 
 div#mobile > img {
-    width: 200px;
+    height: 90vh;
     position: absolute;
     top: 17%;
 }
