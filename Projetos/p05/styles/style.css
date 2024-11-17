@@ -20,13 +20,13 @@ h1 {
 }
 
 div#mobile > img {
-    width: 600px;
+    width: 200px;
     position: absolute;
     top: 17%;
 }
 
 ul#aliens {
-    column-count: 5;
+    column-count: 4;
     list-style-type: none;
 }
 
