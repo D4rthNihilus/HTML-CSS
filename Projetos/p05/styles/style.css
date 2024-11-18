@@ -6,12 +6,19 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     margin: 20px;
 
     background: black url("../images/space-background.jpeg") no-repeat;
+    background-size: cover;
     background-position: top center;
+}
+
+div#border {
+    width: 728px;
+    height: 800px;
+    border: 1px solid white;
 }
 
 h1 {
@@ -20,17 +27,26 @@ h1 {
 }
 
 div#mobile > img {
+    width: 728px;
     position: absolute;
-    top: 17%;
+    top: -10%;
 }
 
 ul#aliens {
-    column-count: 4;
+    column-count: 7;
+    column-gap: 10px;
     list-style-type: none;
+
+    background-color: lime;
+
+    margin-top: 460px;
+
+    height: 180px;
 }
 
 ul#aliens > li > a > img {
-    size: 50px;
+    width: 50px;
+    margin: 0px;
     border-radius: 50%;
     border: 2px solid white;
 }
