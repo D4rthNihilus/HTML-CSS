@@ -7,7 +7,7 @@
 
 body {
     height: 100%;
-    width: 100vw;
+    width: 768px;
     margin: 20px;
 
     background: black url("../images/space-background.jpeg") no-repeat;
@@ -45,7 +45,7 @@ ul#aliens {
 }
 
 ul#aliens > li > a > img {
-    width: 50px;
+    width: 20px;
     margin: 0px;
     border-radius: 50%;
     border: 2px solid white;
