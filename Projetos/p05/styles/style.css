@@ -27,7 +27,7 @@ h1 {
 }
 
 div#mobile > img {
-    width: 728px;
+    width: 600px;
     position: absolute;
     top: -10%;
 }
