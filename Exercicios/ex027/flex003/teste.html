@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com flex-flow</title>
+
+    <style>
+        div.pai {
+            background-color: rgb(6, 87, 87);
+            height: 400px;
+            display: flex;
+            flex-flow: column-reverse wrap-reverse;
+            text-align: center;
+        }
+
+        div.filho {
+            margin: 10px 5px;
+            height: 40px;
+            background-color: rgb(255, 208, 0);
+            font-weight: bolder;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid rgb(6, 87, 87);
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filho">Exemplo A</div>
+        <div class="filho">Exemplo B</div>
+        <div class="filho">Exemplo C</div>
+        <div class="filho">Exemplo D</div>
+        <div class="filho">Exemplo E</div>
+        <div class="filho">Exemplo F</div>
+        <div class="filho">Exemplo G</div>
+        <div class="filho">Exemplo H</div>
+    </div>
+</body>
+</html>
