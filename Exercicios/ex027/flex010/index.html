@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.items {
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum maiores sapiente officia incidunt temporibus odio veniam perspiciatis quos sunt? Minus quibusdam molestias totam voluptas eaque tempore, quidem repellendus debitis quas.</div>
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit iure eos illum quibusdam dignissimos tempore incidunt, distinctio veniam necessitatibus sequi vel dolore, totam nam quam officia ipsa inventore rem repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illum porro, labore obcaecati similique corrupti temporibus et cumque laudantium voluptatibus tempora laborum error ad ab nostrum natus iure, harum aperiam!</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis itaque, accusamus adipisci deleniti numquam obcaecati molestiae asperiores quisquam atque dicta iste inventore illum tempora ex ab recusandae unde tempore?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente dolorum possimus ad libero natus sed illo amet omnis enim nisi, ipsa quisquam sint tempora. Mollitia a repellat quibusdam sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur natus tempore pariatur, praesentium commodi optio corrupti laudantium consequuntur magnam est explicabo ipsam totam architecto velit excepturi, dolorem quisquam, aspernatur voluptatum.</div>
+    </div>
+</body>
+</html>
