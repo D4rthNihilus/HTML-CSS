@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com justify-content</title>
+</head>
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    main {
+        margin: 20px;
+    }
+
+    section.container {
+        background-color: aquamarine;
+        padding: 10px;
+        height: 75px;
+
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    section#container-a {
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    section#container-a > article {
+        background-color: gold;
+    }
+
+    section#container-b {
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    section#container-b > article {
+        background-color: rgb(29, 107, 9);
+        color: white;
+    }
+
+    section#container-c {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    section#container-c > article {
+        background-color: red;
+        color: lightgray;
+    }
+
+    section#container-d {
+        justify-content: space-between;
+        align-items: center;
+    }
+    section#container-d > article {
+        background-color: purple;
+        color: white;
+    }
+
+    article.item {
+        border-radius: 10px;
+        border: 3px solid aquamarine;
+        padding: 5px;
+
+
+    }
+</style>
+<body>
+    <main>
+        <section class="container" id="container-a">
+            <article class="item">Teste Caixa A</article>
+
+            <article class="item">Teste Caixa B</article>
+
+            <article class="item">Teste Caixa C</article>
+
+            <article class="item">Teste Caixa D</article>
+
+            <article class="item">Teste Caixa E</article>
+        </section>
+
+        <br>
+
+        <section class="container" id="container-b">
+            <article class="item">Teste Caixa F</article>
+
+            <article class="item">Teste Caixa G</article>
+
+            <article class="item">Teste Caixa H</article>
+
+            <article class="item">Teste Caixa I</article>
+
+            <article class="item">Teste Caixa J</article>
+        </section>
+
+        <br>
+
+        <section class="container" id="container-c">
+            <article class="item">Teste Caixa K</article>
+
+            <article class="item">Teste Caixa L</article>
+
+            <article class="item">Teste Caixa M</article>
+
+            <article class="item">Teste Caixa N</article>
+
+            <article class="item">Teste Caixa O</article>
+        </section>
+
+        <br>
+
+        <section class="container" id="container-d">
+            <article class="item">Teste Caixa P</article>
+
+            <article class="item">Teste Caixa Q</article>
+
+            <article class="item">Teste Caixa R</article>
+
+            <article class="item">Teste Caixa S</article>
+
+            <article class="item">Teste Caixa T</article>
+        </section>
+    </main>
+</body>
+</html>

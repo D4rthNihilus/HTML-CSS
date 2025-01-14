@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com justify-content</title>
+</head>
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    main {
+        margin: 20px;
+    }
+
+    section.container {
+        background-color: aquamarine;
+        padding: 10px;
+        height: 80px;
+
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    section#container-a {
+        justify-content: flex-start;
+    }
+
+    section#container-a > article {
+        background-color: gold;
+    }
+
+    article.item {
+        border-radius: 10px;
+        border: 3px solid aquamarine;
+        padding: 5px;
+    }
+
+    article#cxa {
+        order: 1;
+        align-self: auto;
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+
+    article#cxb {
+        order: -5;
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+
+    article#cxc {
+        order: 0;
+        align-self: flex-end;
+        flex-shrink: 1;
+        flex-grow: 9;
+    }
+
+    article#cxd {
+        order: 23;
+        align-self: center;
+        flex-shrink: 5;
+        flex-grow: 1;
+    }
+
+    article#cxe {
+        order: 11;
+        align-self: center;
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+
+</style>
+<body>
+    <main>
+        <section class="container" id="container-a">
+            <article class="item" id="cxa">Exemplo Caixa A</article>
+
+            <article class="item" id="cxb">Exemplo Caixa B</article>
+
+            <article class="item" id="cxc">Exemplo Caixa C</article>
+
+            <article class="item" id="cxd">Exemplo Caixa D</article>
+
+            <article class="item" id="cxe">Exemplo Caixa E</article>
+        </section>
+    </main>
+</body>
+</html>
