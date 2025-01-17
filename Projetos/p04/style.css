@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "drink";
+    src: url("./fonts/Drinks.otf") format("opentype");
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -7,18 +12,74 @@
 }
 
 header {
-    background-color: black;
+    background-color: #3c0583;
     color: white;
-    padding: 20px 10px;
+    padding: 20px 10px 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header > menu {
-
+header > div#logo > img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 0px 20px;
 }
 
 header > h1 {
     flex-basis: 70%;
+    font-family: "drink", cursive;
+    font-size: 4em;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.411);
+
+}
+
+nav {
+    background-color: #3c0583;
+    padding: 0px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > a {
+    background-color: #979659;
+    color: white;
+    padding: 5px;
+    margin: 0px 5px 10px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    flex: 0 0 110px;
+}
+
+nav > a:hover {
+    background-color: #414027;
+    transition: background-color .4s;
+}
+
+main {
+    margin: 20px;
+    background-color: aqua;
+}
+
+main > section > div.produto {
+    border: 1px dotted black;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+main > section > div.info {
+    border: 1px dotted black;
+    margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main > section > div.info > p {
+    margin: 0px 20px;
 }
