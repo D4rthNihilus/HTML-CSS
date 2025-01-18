@@ -14,29 +14,29 @@
 header {
     background-color: #3c0583;
     color: white;
-    padding: 20px 10px 10px 10px;
+    padding: 10px 10px 0px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header > div#logo > img {
-    width: 100px;
+    width: 90px;
     border-radius: 50%;
-    margin: 0px 20px;
+    margin: 0px 40px;
 }
 
 header > h1 {
     flex-basis: 70%;
     font-family: "drink", cursive;
-    font-size: 4em;
+    font-size: 3em;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.411);
 
 }
 
 nav {
     background-color: #3c0583;
-    padding: 0px 10px;
+    padding: 10px 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -47,12 +47,12 @@ nav > a {
     background-color: #979659;
     color: white;
     padding: 5px;
-    margin: 0px 5px 10px 5px;
+    margin: 5px;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-    flex: 0 0 100px;
+    flex: 0 0 90px;
 }
 
 nav > a:hover {
@@ -83,7 +83,7 @@ main > section > div.produto {
 }
 
 main > section > div.produto > img {
-    width: 195px;
+    width: 150px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
