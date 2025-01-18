@@ -52,7 +52,7 @@ nav > a {
     text-decoration: none;
     text-align: center;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-    flex: 0 0 110px;
+    flex: 0 0 100px;
 }
 
 nav > a:hover {
@@ -62,24 +62,24 @@ nav > a:hover {
 
 main {
     margin: 20px;
-    background-color: aqua;
 }
 
-main > section > div.produto {
-    border: 1px dotted black;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-main > section > div.info {
-    border: 1px dotted black;
-    margin: 10px;
+main > section#drinks{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: stretch;
 }
 
-main > section > div.info > p {
-    margin: 0px 20px;
+main > section > div.produto {
+    border: 1px dotted #000000;
+    margin: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main > section > div.produto > img {
+    width: 195px;
 }
