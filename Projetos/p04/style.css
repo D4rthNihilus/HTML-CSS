@@ -72,7 +72,9 @@ main > section#drinks{
 }
 
 main > section > div.produto {
-    border: 1px dotted #000000;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px dotted black;
     margin: 10px;
     display: flex;
     flex-flow: column nowrap;
@@ -82,4 +84,41 @@ main > section > div.produto {
 
 main > section > div.produto > img {
     width: 195px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main > section > div.produto > a {
+    width: 100%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+main > section > div.produto > a:hover {
+    color: white;
+    background-color: #280358;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.479);
+    transition: background-color .3s;
+}
+
+main > section > div.produto > a > p {
+    padding: 5px;
+}
+
+
+main > section > div.produto > a > p:hover {
+    scale: 1.1;
+}
+
+footer {
+    margin: 20px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer > p > a:hover {
+    font-weight: bolder;
 }
