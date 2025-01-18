@@ -47,9 +47,9 @@ nav > a {
     background-color: #979659;
     color: white;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 0px;
     border-radius: 5px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-decoration: none;
     text-align: center;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
@@ -107,6 +107,7 @@ main > section > div.produto > a:hover, a:active {
 
 main > section > div.produto > a > p {
     padding: 5px;
+    font-size: 0.8em;
 }
 
 
