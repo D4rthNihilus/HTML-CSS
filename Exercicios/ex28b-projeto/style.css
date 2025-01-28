@@ -77,7 +77,7 @@ p {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     display: block;
     border-radius: 5px;
 }
@@ -100,6 +100,30 @@ a {
     ;
 }
 
+@media (max-width: 1200px) {
+    .structure {
+        grid-template-areas:
+        "header header header"
+        "sidenav content content"
+        "sidenav adverts adverts"
+        "footer footer footer"
+        ;
+    }
+}
+
+@media (max-width: 760px) {
+    .structure {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "sidenav"
+        "content"
+        "adverts"
+        "footer"
+        ;
+    }
+}
+
 .header {
     grid-area: header;
     background-image: linear-gradient(to left, #a2ab5e, #7b9251, #387249, #2e5e35);
@@ -108,6 +132,24 @@ a {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
+}
+
+@media (max-width: 760px) {
+    .header {
+        grid-template-columns: auto;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .header nav a {
+        font-size: 1em;
+    }
+
+    .header li + li {
+        margin-left: 10px;
+    }
 }
 
 .logo {
@@ -149,6 +191,48 @@ a {
     padding: 30px;
 }
 
+@media (max-width: 760px) {
+
+    .sidenav {
+        padding: 0 30px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        position: relative;
+    }
+
+    @keyframes arrow {
+        from {
+            right: 30px;
+        }
+        to {
+            right: 20px;
+        }
+    }
+
+    .sidenav::after {
+        content: "⇨";
+        position: absolute;
+        top: 5px;
+        right: 30px;
+        color:rgba(0, 0, 0, 0.3);
+        animation: arrow .5s ease-in 0s infinite alternate;
+    }
+
+    .sidenav ul {
+        display: flex;
+    }
+
+    .sidenav ul li {
+        flex: 1 0 60px;
+    }
+
+    .sidenav ul li a {
+        margin: 30px 30px 30px 0px;
+        min-width: 110px;
+    }
+}
+
 .sidenav li a {
     display: block;
     min-width: 60px;
@@ -175,6 +259,12 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+}
+
+@media (max-width: 600px) {
+    .content {
+        grid-template-columns: auto;
+    }
 }
 
 .col-wide {
@@ -232,6 +322,7 @@ a {
     gap: 30px;
     display: grid;
     align-content: start;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .footer {
