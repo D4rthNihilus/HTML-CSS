@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Passion+One:wght@400;700;900&family=Sankofa+Display&family=Sriracha&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gochi+Hand&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Passion+One:wght@400;700;900&family=Sankofa+Display&family=Sriracha&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -48,8 +51,12 @@ a {
 }
 
 .logo {
-    margin-left: 20px;
-    max-width: 100px;
+    max-width: 300px;
+    font-size: 3em;
+    font-family: "Gochi Hand", 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #d9eeb3;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
 }
 
 .header nav ul {
@@ -101,6 +108,26 @@ a {
 
 .content {
     grid-area: content;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.col-wide {
+    grid-column: 1/-1;
+}
+
+.image1 {
+    grid-row: span 2;
+    align-self: end;
+}
+
+.image2 {
+    align-self: end;
 }
 
 .adverts {
