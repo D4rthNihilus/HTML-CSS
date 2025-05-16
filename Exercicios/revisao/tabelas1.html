@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão Sobre Tabelas</title>
+    <style>
+        * {
+            margin:0px;
+            padding: 0px;
+            font-size: 95%;
+        }
+
+        body h1 {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+            max-width: 1000px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="17">Dados do Funcionário</th>
+            </tr>
+
+            <tr>
+                <th scope="col" rowspan="4">Nome</th>
+                <th scope="colgroup" colspan="2">Contato</th>
+                <th scope="col" rowspan="4">Sexo</th>
+                <th scope="col" rowspan="4">Idade</th>
+                <th scope="col" rowspan="4">Cargo</th>
+                <th scope="col" rowspan="4">Salário</th>
+                <th scope="colgroup" colspan="9">Identificador</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Email</th>
+                <th rowspan="2">Telefone</th>
+
+                <th colspan="3">ID1</th>
+                <th colspan="3">ID2</th>
+                <th colspan="3">ID3</th>
+            </tr>
+            <tr>
+                <th>ID1A</th>
+                <th>ID1B</th>
+                <th>ID1C</th>
+                <th>ID2A</th>
+                <th>ID2B</th>
+                <th>ID2C</th>
+                <th>ID3A</th>
+                <th>ID3B</th>
+                <th>ID3C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Marcos Noronha</td>
+                <td>marcos@gmail.com</td>
+                <td>(11) 98776-8712</td>
+                <td>M</td>
+                <td>32</td>
+                <td>Pizzaiolo</td>
+                <td>R$ 2134,76</td>
+                <td>25</td>
+                <td>221</td>
+                <td>8192</td>
+                <td>35</td>
+                <td>636</td>
+                <td>2621</td>
+                <td>92</td>
+                <td>722</td>
+                <td>2611</td>
+            </tr>
+            <tr>
+                <td>Lucius Silveira</td>
+                <td>lucius@gmail.com</td>
+                <td>(11) 93876-8202</td>
+                <td>F</td>
+                <td>24</td>
+                <td>Auxiliar de Cozinha</td>
+                <td>R$ 1944,17</td>
+                <td>25</td>
+                <td>221</td>
+                <td>8192</td>
+                <td>35</td>
+                <td>626</td>
+                <td>2621</td>
+                <td>12</td>
+                <td>722</td>
+                <td>211</td>
+            </tr>
+            <tr>
+                <td>Roberto de Nóbrega</td>
+                <td>roberto@gmail.com</td>
+                <td>(11) 99902-8212</td>
+                <td>M</td>
+                <td>23</td>
+                <td>Pizzaiolo</td>
+                <td>R$ 2134,76</td>
+                <td>25</td>
+                <td>221</td>
+                <td>8192</td>
+                <td>35</td>
+                <td>636</td>
+                <td>2621</td>
+                <td>92</td>
+                <td>722</td>
+                <td>2611</td>
+            </tr>
+            <tr>
+                <td>Fernanda Silva</td>
+                <td>fernanda@gmail.com</td>
+                <td>(11) 96776-8201</td>
+                <td>F</td>
+                <td>33</td>
+                <td>Atendente</td>
+                <td>R$ 1987,81</td>
+                <td>25</td>
+                <td>221</td>
+                <td>8192</td>
+                <td>35</td>
+                <td>636</td>
+                <td>2621</td>
+                <td>92</td>
+                <td>722</td>
+                <td>2611</td>
+            </tr>
+            <tr>
+                <td>Maria Eduarda Costa</td>
+                <td>duda@gmail.com</td>
+                <td>(11) 99763-2613</td>
+                <td>F</td>
+                <td>21</td>
+                <td>Atendente</td>
+                <td>R$ 1987,81</td>
+                <td>25</td>
+                <td>221</td>
+                <td>8192</td>
+                <td>35</td>
+                <td>636</td>
+                <td>2621</td>
+                <td>92</td>
+                <td>722</td>
+                <td>2611</td>
+            </tr>
+            <tr>
+                <td>Felipe Oliveira</td>
+                <td>felipe@gmail.com</td>
+                <td>(11) 98712-9901</td>
+                <td>M</td>
+                <td>30</td>
+                <td>Atendente</td>
+                <td>R$ 1987,81</td>
+                <td>25</td>
+                <td>221</td>
+                <td>8192</td>
+                <td>35</td>
+                <td>636</td>
+                <td>2621</td>
+                <td>92</td>
+                <td>722</td>
+                <td>2611</td>
+            </tr>
+            <tr>
+                <td>Luciana Almeida</td>
+                <td>luciana@gmail.com</td>
+                <td>(11) 94667-1544</td>
+                <td>F</td>
+                <td>34</td>
+                <td>Atendente</td>
+                <td>R$ 1987,81</td>
+                <td>25</td>
+                <td>221</td>
+                <td>8192</td>
+                <td>35</td>
+                <td>636</td>
+                <td>2621</td>
+                <td>92</td>
+                <td>722</td>
+                <td>2611</td>
+            </tr>
+            <tr>
+                <td>Mauricio Silva</td>
+                <td>mauricio@gmail.com</td>
+                <td>(11) 92117-9877</td>
+                <td>M</td>
+                <td>39</td>
+                <td>Gerente de Marketing</td>
+                <td>R$ 3781,35</td>
+                <td>25</td>
+                <td>221</td>
+                <td>8192</td>
+                <td>35</td>
+                <td>636</td>
+                <td>2621</td>
+                <td>92</td>
+                <td>722</td>
+                <td>2611</td>
+            </tr>
+            <tr>
+                <td>Romário Moura</td>
+                <td>romario@gmail.com</td>
+                <td>(11) 94025-1313</td>
+                <td>M</td>
+                <td>33</td>
+                <td>Entregador</td>
+                <td>R$ 1935,12</td>
+                <td>25</td>
+                <td>221</td>
+                <td>8192</td>
+                <td>35</td>
+                <td>326</td>
+                <td>2621</td>
+                <td>92</td>
+                <td>722</td>
+                <td>2611</td>
+            </tr>
+            <tr>
+                <td>Cláudia Albuquerque</td>
+                <td>claudia@gmail.com</td>
+                <td>(11) 99781-8321</td>
+                <td>F</td>
+                <td>37</td>
+                <td>Gerente de Vendas</td>
+                <td>R$ 3.577,89</td>
+                <td>21</td>
+                <td>221</td>
+                <td>8192</td>
+                <td>35</td>
+                <td>636</td>
+                <td>2621</td>
+                <td>92</td>
+                <td>722</td>
+                <td>2611</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
