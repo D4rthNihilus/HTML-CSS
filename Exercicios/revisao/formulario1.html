@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com Formulário 1</title>
+    <style>
+        /*
+        azul 1 #0866FF
+        azul 2 hover #1877F2
+        cinza fundo #F2F4F7
+        verde 1 #42B72A
+        verde 2 hover #36A420
+        verde 2 active #2B9217
+        */
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #F2F4F7;
+        }
+
+        main {
+            margin: 32px auto;
+        }
+
+        main > section > h1 {
+            text-align: center;
+            font-size: 3.3em;
+            font-weight: 590;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #0866FF;
+            margin-bottom: 10px;
+        }
+
+        main > section > p {
+            margin: auto;
+            text-align: center;
+            font-size: 1.5em;
+            max-width: 350px;
+            word-spacing: -1px;
+            margin-bottom: 40px;
+        }
+
+        main > section > form {
+            background-color: white;
+            border-radius: 10px;
+            max-width: 360px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 20px 20px 10px 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.11);
+        }
+
+        main > section > form > input {
+            border: 1px solid lightgray;
+            background-color: white;
+            border-radius: 5px;
+            padding: 15px;
+            width: 330px;
+            font-size: 1em;
+            margin: 7px 0px;
+        }
+
+        main > section > form > input:active {
+            border: 2px solid #0866FF;
+        }
+
+        input#entrar {
+            margin-top: 10px;
+            background-color: #0866FF;
+            color: white;
+            font-weight: bolder;
+            font-size: 1.3em;
+            width: 360px;
+            padding: 10px;
+        }
+
+        input#entrar:hover {
+            background-color: #1877F2;
+        }
+
+        p#fpw {
+            background-color: white;
+            margin: 10px 0px;
+            text-align: center;
+        }
+
+        p#fpw > a {
+            background-color: white;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 500;
+            color: #3066FF;
+        }
+
+        p#fpw > a:hover {
+            text-decoration: underline;
+        }
+
+        input#crnc {
+            background-color: #42B72A;
+            color: white;
+            font-weight: bolder;
+            margin: 25px auto;
+            display: block;
+            max-width: 160px;
+        }
+
+        input#crnc:hover {
+            background-color: #36A420;
+        }
+
+        input#crnc:active {
+            background-color: #2B9217;
+        }
+
+        main > p#create {
+            margin: auto;
+            text-align: center;
+            font-size: 0.9em;
+            max-width: 400px;
+        }
+
+        main > p#create > a{
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+        }
+
+        main > p#create > a:hover{
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 1px solid lightgray;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        footer {
+            padding: 30px;
+            padding-bottom: 5px;
+            background-color: white;
+            font-size: 0.78em;
+            color: #7e8185;
+        }
+
+        footer > p > a {
+            text-decoration: none;
+            color:#7e8185;
+            padding-right: 10px;
+        }
+
+        footer > p > a:hover {
+            text-decoration: underline;
+        }
+
+        footer > p#p2 > a {
+            padding-right: 14.5px;
+            line-height: 1.6em;
+        }
+
+        a#ptbr {
+            color: rgb(85, 84, 84);
+        }
+
+        hr#hrfooter {
+            margin: 10px 0px;
+        }
+
+        p#meta {
+            margin: 20px 0px;
+            font-size: 0.9em;
+            color: rgb(102, 102, 102)
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>fαcebook</h1>
+            <p>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+        </section>
+
+        <section id="form">
+            <form action="#">
+                <input type="text" placeholder="Email ou telefone">
+                <br>
+                <input type="password" placeholder="Senha">
+                <br>
+                <input type="button" value="Entrar" id="entrar">
+                <p id="fpw"><a href="#">Esqueceu a senha?</a></p>
+                <hr>
+                <input type="button" value="Criar nova conta" id="crnc">
+            </form>
+        </section>
+
+        <p id="create"><a href="#">Crie uma Página</a> para uma celebridade, uma marca ou uma empresa.</p>
+    </main>
+    <footer>
+        <p id="p1">
+            <a href="#" id="ptbr">Português (Brasil)</a>
+            <a href="#">English (US)</a>
+            <a href="#">Español</a>
+            <a href="#">Français (France)</a>
+            <a href="#">Italiano</a>
+            <a href="#">Deutsch</a>
+            <a href="#">العربية</a>
+            <a href="#">हिन्दी</a>
+            <a href="#">中文(简体)</a>
+            <a href="#">日本語</a>
+        </p>
+        <hr id="hrfooter">
+        <p id="p2">
+            <a href="#">Cadastre-se</a>
+            <a href="#">Entrar</a>
+            <a href="#">Messenger</a>
+            <a href="#">Facebook Lite</a>
+            <a href="#">Vídeo</a>
+            <a href="#">Meta Pay</a>
+            <a href="#">Meta Store</a>
+            <a href="#">Meta Quest</a>
+            <a href="#">Ray-Ban Meta</a>
+            <a href="#">Meta AI</a>
+            <a href="#">Instagram</a>
+            <a href="#">Threads</a>
+            <a href="#">Central de Informações de Votação</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Central de Privacidade</a>
+            <a href="#">Sobre</a>
+            <a href="#">Criar anúncio</a>
+            <a href="#">Criar Página</a>
+            <a href="#">Desenvolvedores</a>
+            <a href="#">Carreiras</a>
+            <a href="#">Cookies</a>
+            <a href="#">Escolhas para anúncios</a>
+            <a href="#">Termos</a>
+            <a href="#">Ajuda</a>
+            <a href="#">Upload de contatos e não usuários</a>
+        </p>
+        <p id="meta">Meta © 2025</p>
+    </footer>
+</body>
+</html>

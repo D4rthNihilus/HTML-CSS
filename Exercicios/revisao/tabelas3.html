@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com Tabelas 3</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 40px;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black
+        }
+        
+
+        td#r {
+            background-color: red;
+            color: white;
+        }
+
+        td#y {
+            background-color: yellow;
+        }
+
+        td#g {
+            background-color: green;
+            color: white;
+        }
+
+        td#b {
+            background-color: blue;
+            color: white;
+        }
+
+        td#v {
+            background-color: purple;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela 1</caption>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Título 1</th>
+                <td>Dado 1</td>
+                <td>Dado 2</td>
+                <td rowspan="2">Dado 3</td>
+            </tr>
+            <tr>
+                <td>Dado 4</td>
+                <td rowspan="2">Dado 5</td>
+            </tr>
+            <tr>
+                <td>Dado 6</td>
+                <td>Dado 7</td>
+            </tr>
+            <tr>
+                <th scope="row">Título 2</th>
+                <td colspan="2">Dado 8</td>
+                <td>Dado 9</td>
+            </tr>
+            <tr>
+                <th>Título 3</th>
+                <td>Dado 10</td>
+                <td colspan="2">Dado 11</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Resultado:</th>
+            <td colspan="3">Dado 12</td>
+        </tfoot>
+    </table>
+    <br>
+    <br>
+    <table>
+        <caption>Tabela 2</caption>
+        <tbody>
+            <tr>
+                <td rowspan="2" id="v">Violeta</td>
+                <td colspan="2" id="r">Vermelho</td>
+            </tr>
+            <tr>
+                <td id="b">Azul</td>
+                <td rowspan="2" id="y">Amarelo</td>
+            </tr>
+            <tr>
+                <td colspan="2" id="g">Verde</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
