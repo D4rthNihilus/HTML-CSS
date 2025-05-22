@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Dropdown</title>
+    <style>
+        header {
+            text-align: center;
+            color: white;
+            background-color: rgb(1, 1, 150);
+        }
+
+        #container {
+            display: inline-block;
+        }
+
+        #container:hover #button {
+            background-color: rgb(12, 53, 66);
+        }
+
+        #container:hover #content {
+            display: block;
+        }
+
+        #button {
+            background-color: rgb(20, 87, 109);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: fit-content;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
+            margin-bottom: 10px;
+        }
+
+        #content {
+            position: absolute;
+            width: 150px;
+            display: none;
+        }
+
+        #content > a {
+            text-decoration: none;
+            color: navy;
+            display: block;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 2px 0px;
+        }
+
+        #content > a:hover {
+            background-color: aqua;
+        }
+
+        #content > a:active {
+            background-color: rgb(11, 204, 204);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Efeito Dropdown</h1>
+    </header>
+
+    <main>
+        <div id="container">
+            <div id="button">MENU</div>
+            <div id="content">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
