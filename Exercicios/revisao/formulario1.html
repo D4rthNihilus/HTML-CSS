@@ -78,8 +78,8 @@
             margin: 7px 0px;
         }
 
-        main > section > form > input:placeholder-shown {
-            border: 2px solid #0866FF;
+        main > section > form > input.txtbox:focus{
+            outline:2px solid #0866FF;
         }
 
         input#entrar {
@@ -204,9 +204,9 @@
 
         <section id="form">
             <form action="#">
-                <input type="text" placeholder="Email ou telefone">
+                <input type="text" placeholder="Email ou telefone" class="txtbox">
                 <br>
-                <input type="password" placeholder="Senha">
+                <input type="password" placeholder="Senha" class="txtbox">
                 <br>
                 <input type="button" value="Entrar" id="entrar">
                 <p id="fpw"><a href="#">Esqueceu a senha?</a></p>
