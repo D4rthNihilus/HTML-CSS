@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com Flexbox</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            background-color: burlywood;
+            color: rgb(82, 61, 3);
+            padding:40px 40px 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        div#menu {
+            font-size: 3.5em;
+            font-weight: bolder;
+        }
+
+        div#menu:hover {
+            color: white;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: left;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.315);
+            margin-right: 10%;
+        }
+        main {
+            margin: 40px 20px;
+        }
+
+        div.container {
+            border: 2px solid rgb(128, 93, 29);
+            border-radius: 15px;
+            padding: 10px;
+            display: flex;
+            background-color: tan;
+            margin-bottom: 100px;
+            height: 300px;
+        }
+
+        div#c1 {
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-content: center;
+            flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: auto;
+        }
+
+        div.cont {
+            background-color: rgba(230, 181, 77, 0.479);font-weight: bolder;
+            color: rgb(68, 40, 4);
+            margin: 10px;
+            border: 2px solid rgb(102, 86, 65);
+            border-radius: 10px;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div id="menu">≡</div>
+        <h1>MEU SITE</h1>
+    </header> 
+
+    <main>
+        <div class="container" id="c1">
+            <div class="cont">Conteúdo 1</div>
+            <div class="cont">Conteúdo 2</div>
+            <div class='cont'>Conteúdo 3</div>
+            <div class="cont">Conteúdo 4</div>
+            <div class="cont">Conteúdo cinco</div>
+        </div>
+    </main>
+</body>
+</html>
