@@ -18,6 +18,11 @@ light-green:  #014B41;
     font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
 }
 
+p#legend {
+    font-size: 0.85em;
+    text-align: center;
+}
+
 /*HEADER*/
 
 header {
@@ -93,15 +98,107 @@ div.icon:hover {
 
 main {
     text-align: justify;
-    margin: 15px;
+    margin: 15px 15px 30px 15px;
 }
+
+main > p {
+    margin: 20px 0px;
+}
+
+/*TABLE*/
 
 main > table#infobox {
     border-collapse: collapse;
-    border: 1px solid black;
+    background-color: rgb(252, 250, 250);
+    font-size: 0.9em;
+    text-align: start;
+    max-width: 390px;
+}
+
+#tableImg {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(233, 85, 221);
+}
+
+#tableImg > img {
+    width: 300px;
 }
 
 main > table#infobox tr {
-    border: 1px solid black;
+    border: 1px solid lightgray;
+}
+
+td > a {
+    text-decoration: none;
+    color: #014B41;
+    font-weight: 800;
+}
+
+td > a:hover {
+    text-decoration: underline;
+}
+
+td > a:active {
+    color: purple;
+}
+
+table#infobox th, td {
+    padding: 8px 10px;
+}
+
+table#infobox th#tbMainTitle {
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+table#infobox th.tbTitle {
+    background-color: #4b410171;
+    padding: 5px;
+    text-align: center;
+}
+
+table#infobox th.tbSubTitle {
+    text-align: start;
+    width: 195px;
+}
+
+table#infobox td.related {
+    text-align: center;
+    font-style: italic;
+}
+
+/*articles*/
+
+div.articles {
+    display: flex;
+    align-items: center;
+}
+
+div.articles > h2 {
+    margin: 20px 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.upIcon {
+    display: none;
+}
+
+article.mainArticle {
+    margin: 20px 0px;
+    display: none;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: rgba(128, 0, 128, 0.183);
+    padding: 15px;
+
 }
 
