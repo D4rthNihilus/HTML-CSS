@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/*
+light-green:  #014B41;
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exile&family=Merienda:wght@300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+}
+
+/*HEADER*/
+
+header {
+    background-color: #014B41;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menuAndTitle {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    margin: 10px;
+    font-size: 1.8em;
+    font-family: 'Merienda', 'Times New Roman', Times, serif;
+}
+
+#menuIcon {
+    margin: 10px;
+}
+
+#searchIcon {
+    margin: 10px 20px;
+}
+
+/*SECTION#TITLE*/
+
+section#title {
+    margin: 30px 15px 10px 15px;
+}
+
+section#title h1 {
+    font-family: 'Merriweather', 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+section#title p {
+    margin-bottom: 15px;
+    font-size: 0.8em;
+}
+
+section#title hr {
+    margin: 2px;
+}
+
+div#icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#icons > div {
+    display: flex;
+}
+
+div.icon {
+    padding: 8px 10px;
+    border: 2px solid white;
+}
+
+div.icon:hover {
+    background-color: #6da8833d;
+    border: 2px solid #028302;
+    border-radius: 8px;
+}
+
+/*MAIN*/
+
+main {
+    text-align: justify;
+    margin: 15px;
+}
+
+main > table#infobox {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+main > table#infobox tr {
+    border: 1px solid black;
+}
+
