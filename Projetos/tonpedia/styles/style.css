@@ -119,13 +119,10 @@ main > table#infobox {
     margin: auto;
     display: flex;
     justify-content: center;
-    width: 300px;
-    height: 200px;
-    background-color: rgb(233, 85, 221);
 }
 
 #tableImg > img {
-    width: 300px;
+    width: 280px;
 }
 
 main > table#infobox tr {
@@ -134,8 +131,7 @@ main > table#infobox tr {
 
 td > a {
     text-decoration: none;
-    color: #014B41;
-    font-weight: 800;
+    color: #014b32;
 }
 
 td > a:hover {
@@ -197,7 +193,7 @@ article.mainArticle {
 /*FOOTER*/
 
 footer {
-    background-color: rgba(128, 0, 128, 0.183);
+    background-color: #ADA88B;
     padding: 15px;
 
 }
