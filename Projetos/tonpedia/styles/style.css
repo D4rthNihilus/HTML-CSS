@@ -25,6 +25,7 @@ p {
 /*HEADER*/
 
 header {
+    padding: 0px 10px;
     background-color: #014B41;
     display: flex;
     justify-content: space-between;
