@@ -50,7 +50,7 @@ header h1 {
 }
 
 #menuIcon:hover {
-    fill: #ADA88B;
+    fill: orange;
 }
 
 #searchIcon {
@@ -65,6 +65,7 @@ header h1 {
     background-color: rgba(128, 128, 128, 0.3);
     width: 100vw;
     height: 100vh;
+    display: none;
 }
 
 @keyframes menuTransition {
@@ -85,29 +86,39 @@ nav {
     max-width: 80%;
 }
 
-nav > div.menuItem {
+nav p {
+    line-height: 1.5em;
+}
+
+nav a {
+    color: #434343;
+    text-decoration: none;
+}
+
+nav  div.menuItem {
     display: flex;
+    align-items: center;
     padding: 10px;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid #014B41;
 }
 
-nav > div.item {
+nav  div.item {
     border-left: 5px solid rgb(255, 255, 255);
 }
 
-nav > div.item:hover {
-    background-color: #f1eedd;
+nav  div.item:hover {
+    background-color: #e6e5df;
     border-left: 5px solid orangered;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
 
-nav > div.menuItem svg {
+nav  div.menuItem svg {
     margin-right: 10px;
 }
 
-nav > div.menuDiv {
+nav  div.menuDiv {
     height: 25px;
 }
 
@@ -123,10 +134,12 @@ nav div#donate a {
 nav p#dn {
     color:orangered;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 nav img#dngif {
     height: 85px;
+    margin: 0px 10px;
 }
 
 nav > div#about {
@@ -134,18 +147,18 @@ nav > div#about {
     display: flex;
 }
 
-nav > div#about p {
+nav > div#about a {
     color: white;
     padding: 5px 10px;
     height: min-content;
-    border-left: 5px solid #014b32;
+    border-left: 5px solid #014B41;
 }
 
-nav > div#about p:hover {
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+nav > div#about a:hover {
     background-color: #013523;
     border-left: 5px solid orangered;
+    border-radius: 3px;
+    
 }
 
 /*SECTION#TITLE*/

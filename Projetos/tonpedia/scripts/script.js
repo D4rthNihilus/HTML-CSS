@@ -1,3 +1,6 @@
+const moon = document.querySelector("#moon");
+const font = document.querySelector('#font');
+const wand = document.querySelector("#wand");
 const menuButton = document.getElementById("menuIcon");
 const menu = document.getElementById('menu');
 const nav = document.querySelector('nav');
@@ -40,6 +43,22 @@ nav.addEventListener('click', (evt)=>{
 menu.addEventListener('click', ()=>{
     menu.style.display='none';
 });
+
+moon.addEventListener('click', ()=>{
+    if(document.body.style.backgroundColor=='white'||document.body.style.backgroundColor=='#ffffff'||document.body.style.backgroundColor=='rgb(255,255,255)'){
+        document.body.style.backgroundColor='black';
+        document.body.style.color='white';
+    } else {
+        document.body.style.backgroundColor='white';
+        document.body.style.color='black';
+    }
+})
+
+font.addEventListener('click', ()=>{
+})
+
+wand.addEventListener('click', ()=>{
+})
 
 tp01.addEventListener('click', ()=>{
     if(a01.style.display=='none'){
