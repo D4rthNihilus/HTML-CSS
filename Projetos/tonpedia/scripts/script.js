@@ -1,3 +1,6 @@
+const menuButton = document.getElementById("menuIcon");
+const menu = document.getElementById('menu');
+const nav = document.querySelector('nav');
 const tp01 = document.querySelector("#topic01");
 const a01 = document.querySelector("#article01");
 const tp02 = document.querySelector("#topic02");
@@ -24,6 +27,19 @@ const tpReferences = document.querySelector("#topicReferences");
 const references = document.querySelector("#articleReferences");
 const tpExternal = document.querySelector("#topicExternal");
 const externall = document.querySelector("#articleExternal");
+
+menuButton.addEventListener('click', ()=>{
+    menu.style.display='block';
+    menu.style.animation='menuTransition 0.3s linear';
+});
+
+nav.addEventListener('click', (evt)=>{
+    evt.stopPropagation();
+})
+
+menu.addEventListener('click', ()=>{
+    menu.style.display='none';
+});
 
 tp01.addEventListener('click', ()=>{
     if(a01.style.display=='none'){

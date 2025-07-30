@@ -45,11 +45,107 @@ header h1 {
 }
 
 #menuIcon {
+    fill: #FFFFFF;
     margin: 10px;
+}
+
+#menuIcon:hover {
+    fill: #ADA88B;
 }
 
 #searchIcon {
     margin: 10px 20px;
+}
+
+/*NAV MENU*/
+
+#menu {
+    top: 0px;
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.3);
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes menuTransition {
+    0% {
+        left: -100%
+    }
+    100% {
+        left: 0%
+    }
+} 
+
+nav {
+    background-color: #014B41;
+    color: #434343;
+    font-size: 0.9em;
+    font-weight: bold;
+    height: 100vh;
+    max-width: 80%;
+}
+
+nav > div.menuItem {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #014B41;
+}
+
+nav > div.item {
+    border-left: 5px solid rgb(255, 255, 255);
+}
+
+nav > div.item:hover {
+    background-color: #f1eedd;
+    border-left: 5px solid orangered;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+nav > div.menuItem svg {
+    margin-right: 10px;
+}
+
+nav > div.menuDiv {
+    height: 25px;
+}
+
+nav div#donate a {
+    text-decoration: none;
+    color: #434343;
+    font-weight: normal;
+    display: flex;
+    flex-shrink: 1fr;
+    align-items: center;
+}
+
+nav p#dn {
+    color:orangered;
+    font-weight: bold;
+}
+
+nav img#dngif {
+    height: 85px;
+}
+
+nav > div#about {
+    font-weight: normal;
+    display: flex;
+}
+
+nav > div#about p {
+    color: white;
+    padding: 5px 10px;
+    height: min-content;
+    border-left: 5px solid #014b32;
+}
+
+nav > div#about p:hover {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #013523;
+    border-left: 5px solid orangered;
 }
 
 /*SECTION#TITLE*/
@@ -91,7 +187,7 @@ div.icon {
 
 div.icon:hover {
     background-color:#ada88b6c ;
-    border: 2px solid #ADA88B;
+    border: 2px solid #ada88b;
 }
 
 /*MAIN*/
