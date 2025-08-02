@@ -193,14 +193,12 @@ div#icons > div {
 }
 
 div.icon {
-    padding: 8px 10px;
-    border: 2px solid white;
+    padding: 10px;
     border-radius: 8px;
 }
 
 div.icon:hover {
     background-color:#ada88b6c ;
-    border: 2px solid #ada88b;
 }
 
 /*MAIN*/

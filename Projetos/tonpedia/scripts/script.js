@@ -31,6 +31,16 @@ const references = document.querySelector("#articleReferences");
 const tpExternal = document.querySelector("#topicExternal");
 const externall = document.querySelector("#articleExternal");
 
+let menuIcon = document.querySelector('#menuIcon svg');
+
+menuIcon.addEventListener('mouseenter', (evt)=>{
+    evt.target.style.fill='orange';
+});
+
+menuIcon.addEventListener('mouseleave', (evt)=>{
+    evt.target.style.fill='white';
+});
+
 menuButton.addEventListener('click', ()=>{
     menu.style.display='block';
     menu.style.animation='menuTransition 0.3s linear';
@@ -45,12 +55,171 @@ menu.addEventListener('click', ()=>{
 });
 
 moon.addEventListener('click', ()=>{
-    if(document.body.style.backgroundColor=='white'||document.body.style.backgroundColor=='#ffffff'||document.body.style.backgroundColor=='rgb(255,255,255)'){
-        document.body.style.backgroundColor='black';
-        document.body.style.color='white';
-    } else {
+    if(document.body.style.backgroundColor=='black'){
         document.body.style.backgroundColor='white';
         document.body.style.color='black';
+        document.querySelector('table').style.backgroundColor = 'white';
+        let links = [...document.querySelectorAll('a')];
+        links.map((el)=>{
+            el.style.color='#014B32';
+        });
+
+        let icons = [...document.querySelectorAll('.icon > svg')];
+        icons.map((el)=>{
+            el.style.fill='#434343';
+        });
+
+        let articlesH2 = [...document.querySelectorAll('.articles h2')];
+        articlesH2.map((el)=>{
+            el.style.color='black';
+        });
+
+        let articles = [...document.querySelectorAll('.articles')];
+
+        articles.map((el)=>{
+            el.style.backgroundColor='white';
+            el.addEventListener('mouseenter', (evt)=>{
+                evt.target.style.backgroundColor='#99B19D';
+            });
+            el.addEventListener('mouseleave', (evt)=>{
+                evt.target.style.backgroundColor='white'
+            });
+        });
+
+        let articleArrow = [...document.querySelectorAll('svg')];
+        articleArrow.map((el)=>{
+            el.style.fill='#434343';
+        });
+
+         document.querySelector('footer h2').style.color='#434343';
+
+        let relatedPages = [...document.querySelectorAll('.rltp')];
+        relatedPages.map((el)=>{
+            el.style.backgroundColor='white';
+
+            el.addEventListener('mouseenter', (evt)=>{
+                evt.target.style.backgroundColor='#99B19D';
+            });
+            el.addEventListener('mouseleave', (evt)=>{
+                evt.target.style.backgroundColor='white';
+            });
+        });
+
+        document.querySelector('#footerTonpedia').style.color='#434343';
+
+        let separador = [...document.querySelectorAll('.separador')];
+        separador.map((el)=>{
+            el.style.color='#014B32';
+        });
+
+        let menuItem = [...document.querySelectorAll('div.menuItem')];
+        menuItem.map((el)=>{
+            el.style.backgroundColor='white';
+            el.style.color='black';
+            el.style.borderLeft='5px solid white';
+        });
+
+        document.querySelector('#searchIcon svg').style.fill = 'white';
+
+        let item = [...document.querySelectorAll('div.item')];
+        item.map((el)=>{
+            el.addEventListener('mouseenter', (evt)=>{
+                evt.target.style.borderLeft='5px solid orangered';
+                evt.target.style.backgroundColor='#E6E5DF'
+            });
+
+            el.addEventListener('mouseleave', (evt)=>{
+                evt.target.style.borderLeft='5px solid white';
+                evt.target.style.backgroundColor='white';
+            });
+        });
+
+        let about = [...document.querySelectorAll('div#about a')];
+        about.map((el)=>{
+            el.style.color='white';
+        });
+
+        menuIcon.style.fill='white';
+
+    } else {
+        document.body.style.backgroundColor='black';
+        document.body.style.color='white';
+        document.querySelector('table').style.backgroundColor = 'black';
+        let links = [...document.querySelectorAll('a')];
+        links.map((el)=>{
+            el.style.color='#4ec94e';
+        });
+
+        let icons = [...document.querySelectorAll('.icon > svg')];
+        icons.map((el)=>{
+            el.style.fill='white';
+        });
+
+        let articlesH2 = [...document.querySelectorAll('.articles h2')];
+        articlesH2.map((el)=>{
+            el.style.color='white';
+        });
+
+        let articleArrow = [...document.querySelectorAll('svg')];
+        articleArrow.map((el)=>{
+            el.style.fill='white';
+        });
+
+        let articles = [...document.querySelectorAll('.articles')];
+        articles.map((el)=>{
+            el.addEventListener('mouseenter', (evt)=>{
+                evt.target.style.backgroundColor='#49554bff'
+            });
+            el.addEventListener('mouseleave', (evt)=>{
+                evt.target.style.backgroundColor='black'
+            });
+        });
+
+        document.querySelector('footer h2').style.color='white';
+
+        let relatedPages = [...document.querySelectorAll('.rltp')];
+        relatedPages.map((el)=>{
+            el.style.backgroundColor='black';
+
+            el.addEventListener('mouseenter', (evt)=>{
+                evt.target.style.backgroundColor='#29493eff';
+            });
+            el.addEventListener('mouseleave', (evt)=>{
+                evt.target.style.backgroundColor='black';
+            });
+        });
+
+        document.querySelector('#footerTonpedia').style.color='white';
+
+        let separador = [...document.querySelectorAll('.separador')];
+        separador.map((el)=>{
+            el.style.color='#4ec94e';
+        });
+
+        let menuItem = [...document.querySelectorAll('div.menuItem')];
+        menuItem.map((el)=>{
+            el.style.backgroundColor='black';
+            el.style.color='white';
+            el.style.borderLeft='5px solid black';
+        })
+
+        let item = [...document.querySelectorAll('div.item')];
+        item.map((el)=>{
+            el.addEventListener('mouseenter', (evt)=>{
+                evt.target.style.borderLeft='5px solid orangered';
+                evt.target.style.backgroundColor='#2b2a2aff';
+            });
+
+            el.addEventListener('mouseleave', (evt)=>{
+                evt.target.style.borderLeft='5px solid black';
+                evt.target.style.backgroundColor='black';
+            });
+        });
+
+        let about = [...document.querySelectorAll('div#about a')];
+        about.map((el)=>{
+            el.style.color='white';
+        });
     }
 })
 
