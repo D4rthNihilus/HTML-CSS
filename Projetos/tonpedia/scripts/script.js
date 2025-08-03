@@ -176,8 +176,9 @@ moon.addEventListener('click', ()=>{
 
         let articles = [...document.querySelectorAll('.articles')];
         articles.map((el)=>{
+            el.style.backgroundColor='black';
             el.addEventListener('mouseenter', (evt)=>{
-                evt.target.style.backgroundColor='#49554bff'
+                evt.target.style.backgroundColor='#49554bff';
             });
             el.addEventListener('mouseleave', (evt)=>{
                 evt.target.style.backgroundColor='black'
@@ -239,7 +240,7 @@ wand.addEventListener('click', ()=>{
 })
 
 tp01.addEventListener('click', ()=>{
-    if(a01.style.display=='none'){
+    if(a01.style.display!='block'){
         document.querySelector('#up01').style.display='block';
         document.querySelector('#down01').style.display='none';
         a01.style.display='block';
@@ -251,7 +252,7 @@ tp01.addEventListener('click', ()=>{
 });
 
 tp02.addEventListener('click', ()=>{
-    if(a02.style.display=='none'){
+    if(a02.style.display!='block'){
         document.querySelector('#up02').style.display='block';
         document.querySelector('#down02').style.display='none';
         a02.style.display='block';
@@ -263,7 +264,7 @@ tp02.addEventListener('click', ()=>{
 });
 
 tp03.addEventListener('click', ()=>{
-    if(a03.style.display=='none'){
+    if(a03.style.display!='block'){
         document.querySelector('#up03').style.display='block';
         document.querySelector('#down03').style.display='none';
         a03.style.display='block';
@@ -275,7 +276,7 @@ tp03.addEventListener('click', ()=>{
 });
 
 tp04.addEventListener('click', ()=>{
-    if(a04.style.display=='none'){
+    if(a04.style.display!='block'){
         document.querySelector('#up04').style.display='block';
         document.querySelector('#down04').style.display='none';
         a04.style.display='block';
@@ -287,7 +288,7 @@ tp04.addEventListener('click', ()=>{
 });
 
 tp05.addEventListener('click', ()=>{
-    if(a05.style.display=='none'){
+    if(a05.style.display!='block'){
         document.querySelector('#up05').style.display='block';
         document.querySelector('#down05').style.display='none';
         a05.style.display='block';
@@ -299,7 +300,7 @@ tp05.addEventListener('click', ()=>{
 });
 
 tp06.addEventListener('click', ()=>{
-    if(a06.style.display=='none'){
+    if(a06.style.display!='block'){
         document.querySelector('#up06').style.display='block';
         document.querySelector('#down06').style.display='none';
         a06.style.display='block';
@@ -311,7 +312,7 @@ tp06.addEventListener('click', ()=>{
 });
 
 tp07.addEventListener('click', ()=>{
-    if(a07.style.display=='none'){
+    if(a07.style.display!='block'){
         document.querySelector('#up07').style.display='block';
         document.querySelector('#down07').style.display='none';
         a07.style.display='block';
@@ -323,7 +324,7 @@ tp07.addEventListener('click', ()=>{
 });
 
 tp08.addEventListener('click', ()=>{
-    if(a08.style.display=='none'){
+    if(a08.style.display!='block'){
         document.querySelector('#up08').style.display='block';
         document.querySelector('#down08').style.display='none';
         a08.style.display='block';
@@ -335,7 +336,7 @@ tp08.addEventListener('click', ()=>{
 });
 
 tp09.addEventListener('click', ()=>{
-    if(a09.style.display=='none'){
+    if(a09.style.display!='block'){
         document.querySelector('#up09').style.display='block';
         document.querySelector('#down09').style.display='none';
         a09.style.display='block';
@@ -347,7 +348,7 @@ tp09.addEventListener('click', ()=>{
 });
 
 tp10.addEventListener('click', ()=>{
-    if(a10.style.display=='none'){
+    if(a10.style.display!='block'){
         document.querySelector('#up10').style.display='block';
         document.querySelector('#down10').style.display='none';
         a10.style.display='block';
@@ -359,7 +360,7 @@ tp10.addEventListener('click', ()=>{
 });
 
 tpNotes.addEventListener('click', ()=>{
-    if(notes.style.display=='none'){
+    if(notes.style.display!='block'){
         document.querySelector('#upNotes').style.display='block';
         document.querySelector('#downNotes').style.display='none';
         notes.style.display='block';
@@ -371,7 +372,7 @@ tpNotes.addEventListener('click', ()=>{
 });
 
 tpReferences.addEventListener('click', ()=>{
-    if(references.style.display=='none'){
+    if(references.style.display!='block'){
         document.querySelector('#upReferences').style.display='block';
         document.querySelector('#downReferences').style.display='none';
         references.style.display='block';
@@ -383,7 +384,7 @@ tpReferences.addEventListener('click', ()=>{
 });
 
 tpExternal.addEventListener('click', ()=>{
-    if(externall.style.display=='none'){
+    if(externall.style.display!='block'){
         document.querySelector('#upExternal').style.display='block';
         document.querySelector('#downExternal').style.display='none';
         externall.style.display='block';
