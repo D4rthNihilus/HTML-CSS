@@ -31,7 +31,16 @@ const references = document.querySelector("#articleReferences");
 const tpExternal = document.querySelector("#topicExternal");
 const externall = document.querySelector("#articleExternal");
 
-let menuIcon = document.querySelector('#menuIcon svg');
+const menuIcon = document.querySelector('#menuIcon svg');
+const lang = document.querySelector('#languages');
+
+document.querySelector('#translateIcon').addEventListener('click', ()=>{
+    if(!lang.style.display=='flex'){
+        lang.style.display='none'
+    } else {
+        lang.style.display='flex';
+    }
+});
 
 menuIcon.addEventListener('mouseenter', (evt)=>{
     evt.target.style.fill='orange';
