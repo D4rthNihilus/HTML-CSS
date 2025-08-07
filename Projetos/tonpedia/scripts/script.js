@@ -20,10 +20,6 @@ const tp07 = document.querySelector("#topic07");
 const a07 = document.querySelector("#article07");
 const tp08 = document.querySelector("#topic08");
 const a08 = document.querySelector("#article08");
-const tp09 = document.querySelector("#topic09");
-const a09 = document.querySelector("#article09");
-const tp10 = document.querySelector("#topic10");
-const a10 = document.querySelector("#article10");
 const tpNotes = document.querySelector("#topicNotes");
 const notes = document.querySelector("#articleNotes");
 const tpReferences = document.querySelector("#topicReferences");
@@ -68,7 +64,6 @@ moon.addEventListener('click', ()=>{
         document.body.style.backgroundColor='white';
         document.body.style.color='black';
         moon.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>';
-        document.querySelector('table').style.backgroundColor = 'white';
         let links = [...document.querySelectorAll('a')];
         links.map((el)=>{
             el.style.color='#014B32';
@@ -84,24 +79,12 @@ moon.addEventListener('click', ()=>{
             el.style.color='black';
         });
 
-        let articles = [...document.querySelectorAll('.articles')];
-
-        articles.map((el)=>{
-            el.style.backgroundColor='white';
-            el.addEventListener('mouseenter', (evt)=>{
-                evt.target.style.backgroundColor='#99B19D';
-            });
-            el.addEventListener('mouseleave', (evt)=>{
-                evt.target.style.backgroundColor='white'
-            });
-        });
-
         let articleArrow = [...document.querySelectorAll('svg')];
         articleArrow.map((el)=>{
             el.style.fill='#434343';
         });
 
-         document.querySelector('footer h2').style.color='#434343';
+        document.querySelector('footer h2').style.color='#434343';
 
         let relatedPages = [...document.querySelectorAll('.rltp')];
         relatedPages.map((el)=>{
@@ -154,7 +137,6 @@ moon.addEventListener('click', ()=>{
     } else {
         document.body.style.backgroundColor='black';
         document.body.style.color='white';
-        document.querySelector('table').style.backgroundColor = 'black';
         moon.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm283-100q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z"/></svg>';
         let links = [...document.querySelectorAll('a')];
         links.map((el)=>{
@@ -174,17 +156,6 @@ moon.addEventListener('click', ()=>{
         let articleArrow = [...document.querySelectorAll('svg')];
         articleArrow.map((el)=>{
             el.style.fill='white';
-        });
-
-        let articles = [...document.querySelectorAll('.articles')];
-        articles.map((el)=>{
-            el.style.backgroundColor='black';
-            el.addEventListener('mouseenter', (evt)=>{
-                evt.target.style.backgroundColor='#49554bff';
-            });
-            el.addEventListener('mouseleave', (evt)=>{
-                evt.target.style.backgroundColor='black'
-            });
         });
 
         document.querySelector('footer h2').style.color='white';
@@ -334,30 +305,6 @@ tp08.addEventListener('click', ()=>{
         document.querySelector('#up08').style.display='none';
         document.querySelector('#down08').style.display='block';
         a08.style.display='none';
-    }
-});
-
-tp09.addEventListener('click', ()=>{
-    if(a09.style.display!='block'){
-        document.querySelector('#up09').style.display='block';
-        document.querySelector('#down09').style.display='none';
-        a09.style.display='block';
-    } else {
-        document.querySelector('#up09').style.display='none';
-        document.querySelector('#down09').style.display='block';
-        a09.style.display='none';
-    }
-});
-
-tp10.addEventListener('click', ()=>{
-    if(a10.style.display!='block'){
-        document.querySelector('#up10').style.display='block';
-        document.querySelector('#down10').style.display='none';
-        a10.style.display='block';
-    } else {
-        document.querySelector('#up10').style.display='none';
-        document.querySelector('#down10').style.display='block';
-        a10.style.display='none';
     }
 });
 
