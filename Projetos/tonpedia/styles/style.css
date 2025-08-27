@@ -383,6 +383,12 @@ footer {
     padding-top: 24px;
 }
 
+
+#relatedPages a {
+    text-decoration: none;
+    color: black;
+}
+
 div.rltp {
     background-color: rgb(255, 255, 255);
     margin: 10px 0px;
