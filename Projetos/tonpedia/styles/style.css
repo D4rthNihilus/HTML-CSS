@@ -168,7 +168,6 @@ nav > div#about a:hover {
 div#effect{
     position: fixed;
     left:50%;
-    top:50%;
     transform: translate(-50%, -50%);
 }
 
@@ -178,6 +177,8 @@ div#effect{
 
 div#effect img {
     max-width: 400px;
+    opacity: 0.8;
+    display: none;
 }
 
 @keyframes walking {
@@ -391,6 +392,8 @@ footer {
 #relatedPages a {
     text-decoration: none;
     color: black;
+    display: grid;
+    flex-shrink: 1;
 }
 
 div.rltp {

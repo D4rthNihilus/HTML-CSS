@@ -20,6 +20,18 @@ const tp07 = document.querySelector("#topic07");
 const a07 = document.querySelector("#article07");
 const tp08 = document.querySelector("#topic08");
 const a08 = document.querySelector("#article08");
+
+const effect = document.querySelector('div#effect img');
+
+wand.addEventListener('click', ()=>{
+
+    if (effect.style.display!='block') {
+        effect.style.display='block';
+    } else {
+        effect.style.display='none';
+    }
+});
+
 const tpNotes = document.querySelector("#topicNotes");
 const notes = document.querySelector("#articleNotes");
 const tpReferences = document.querySelector("#topicReferences");
@@ -29,14 +41,6 @@ const externall = document.querySelector("#articleExternal");
 
 const menuIcon = document.querySelector('#menuIcon svg');
 const lang = document.querySelector('#languages');
-
-document.querySelector('#translateIcon').addEventListener('click', ()=>{
-    if(lang.style.display!='flex'){
-        lang.style.display='flex'
-    } else {
-        lang.style.display='none';
-    }
-});
 
 menuIcon.addEventListener('mouseenter', (evt)=>{
     evt.target.style.fill='orange';
