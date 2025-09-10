@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chords</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0px;
+            text-decoration: underline;
+            color: purple
+        }
+
+        div#word {
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+
+        div#word input {
+            height: 70px;
+            font-size: 3em;
+            padding: 5px 20px;
+        }
+
+        div#letters {
+            height: 320px;
+            margin: 25px 20px 20px 20px;
+            border: 1px solid black;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(8, 1fr);
+        }
+
+        div.char {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.7em;
+        }
+
+        div.char:hover {
+            background-color: rgb(139, 23, 139);
+            color: white;
+        }
+
+        #button {
+            padding: 10px 40px;
+            margin: auto;
+            display: block;
+            font-size: 1.7em;
+            font-weight: bolder;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.473);
+            text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.288);
+            background-color: blueviolet;
+            color: white;
+        }
+        #button:hover {
+            background-color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>HARMONY CREATOR</h1>
+    <div id="word"><input type="text" name="wd" id="wd"></div>
+    <div id="letters">
+        <div id="l1" class="char">a</div>
+        <div id="l2" class="char">ã</div>
+        <div id="l3" class="char">ɑ</div>
+        <div id="l4" class="char">ɑɪ</div>
+        <div id="l5" class="char">ɑʊ</div>
+        <div id="l6" class="char">ɒ</div>
+        <div id="l7" class="char">æ</div>
+        
+        <div id="l8" class="char">e</div>
+        <div id="l9" class="char">eə</div>
+        <div id="l10" class="char">eɪ</div>
+        <div id="l11" class="char">ẽ</div>
+        <div id="l12" class="char">ε</div>
+        <div id="l13" class="char">ə</div>
+        <div id="l14" class="char">əʊ</div>
+        <div id="l15" class="char">ɚ</div>
+        <div id="l16" class="char">ɜ</div>
+        <div id="l17" class="char">ɝ</div>
+        <div id="l18" class="char">ʌ</div>
+        <div id="l19" class="char">i</div>
+        <div id="l20" class="char">ĩ</div>
+        <div id="l21" class="char">ɪ</div>
+        <div id="l22" class="char">ɪə</div>
+        <div id="l23" class="char">o</div>
+        <div id="l24" class="char">oʊ</div>
+        <div id="l25" class="char">õ</div>
+        <div id="l26" class="char">ɔ</div>
+        <div id="l27" class="char">ɔɪ</div>
+        <div id="l28" class="char">u</div>
+        <div id="l29" class="char">ũ</div>
+        <div id="l30" class="char">ʊ</div>
+        <div id="l31" class="char">ʊə</div>
+        <div id="l32" class="char">j</div>
+        <div id="l33" class="char">w</div>
+        <div id="l34" class="char">ʔ</div>
+        <div id="l35" class="char">b</div>
+        <div id="l36" class="char">β</div>
+        <div id="l37" class="char">tʃ</div>
+        <div id="l38" class="char">d</div>
+        <div id="l39" class="char">f</div>
+        <div id="l40" class="char">g</div>
+        <div id="l41" class="char">h</div>
+        <div id="l42" class="char">ʒ</div>
+        <div id="l43" class="char">dʒ</div>
+        <div id="l44" class="char">x</div>
+        <div id="l45" class="char">k</div>
+        <div id="l46" class="char">l</div>
+        <div id="l47" class="char">ɫ</div>
+        <div id="l48" class="char">ʎ</div>
+        <div id="l49" class="char">m</div>
+        <div id="l50" class="char">n</div>
+        <div id="l51" class="char">ɲ</div>
+        <div id="l52" class="char">ŋ</div>
+        <div id="l53" class="char">p</div>
+        <div id="l54" class="char">ɹ</div>
+        <div id="l55" class="char">ɾ</div>
+        <div id="l56" class="char">r</div>
+        <div id="l57" class="char">s</div>
+        <div id="l58" class="char">ʃ</div>
+        <div id="l59" class="char">t</div>
+        <div id="l60" class="char">θ</div>
+        <div id="l61" class="char">ð</div>
+        <div id="l62" class="char">v</div>
+        <div id="l63" class="char">z</div>
+        <div id="l64" class="char">'</div>
+    </div>
+    <input type="button" value="CREATE" id="button">
+    <script src="script.js"></script>
+</body>
+</html>
