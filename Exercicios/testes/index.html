@@ -9,22 +9,144 @@
             margin: 0px;
             padding: 0px;
         }
+
+        body {
+            margin: 20px;
+            max-width: 400px;
+            display: grid;
+
+        }
+
+        div.campoForm {
+            width: 100vw;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            background-color: rgb(241, 237, 230);
+            width: 300px;
+            padding: 5px;
+            margin: 10px 0px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        input#button {
+            background-color: rgb(11, 125, 179);
+            border-radius: 10px;
+            padding: 10px 20px;
+            width: 100%;
+            border: none;
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        input#button:hover {
+            background-color: rgb(3, 58, 139);
+        }
+
+        .res {
+            margin: auto;
+            border: 1px solid navy;
+            border-radius: 10px;
+            width: 450px;
+            padding: 5px;
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            gap: 10px 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            
+        }
+
+        .pessoa {
+            color: navy;
+            font-weight: bolder;
+        }
+
     </style>
 </head>
 <body>
     <div class='campoForm'>
         <label>Nome: </label>
-        <input type='text' name='name', id='name' value=''>
+        <input type='text' name='name', id='name'>
     </div>
     <div class='campoForm'>
         <label>Idade: </label>
-        <input type='text' name='idade', id='idade' value=''>
+        <input type='text' name='idade', id='idade'>
     </div>
     <div class='campoForm'>
-        <input type='button' name='name', id='name' value=' Adicionar'>
+        <input type='button' name='button', id='button' value=' Adicionar'>
     </div>
     <div class='res'></div>
 </body>
-<script>
+<script> 
+    class Pessoa{
+        constructor(nome, idade){
+            this.nome=nome;
+            this.idade=idade;
+        }
+
+        getNome(){
+            return this.nome;
+        }
+
+        getIdade(){
+            return this.idade;
+        }
+
+        setNome(nome){
+            this.nome = nome;
+        }
+
+        setIdade(idade){
+            this.idade = idade;
+        }
+
+        info() {
+            console.log(`Nome: ${this.nome}`);
+            console.log(`Idade: ${this.idade}`);
+            console.log(`......................`);
+        }
+    }
+
+    let pessoas=[];
+
+    const adicionar = document.querySelector('#button');
+    const res = document.querySelector('.res');
+    const nome = document.querySelector('#name');
+    const idade = document.querySelector('#idade');
+    
+    adicionar.addEventListener('click', ()=>{
+
+        if(nome.value!=''){
+            if(idade.value!='' && idade.value*1>=0 && idade.value<=120){
+                const p = new Pessoa(nome.value, idade.value);
+                pessoas.push(p);
+
+                res.innerHTML='';
+
+                pessoas.map((p)=>{
+                const div = document.createElement("div");
+                div.setAttribute('class', 'pessoa');
+                div.innerHTML=`Nome: ${p.getNome()} <br> Idade: ${p.getIdade()}`;
+                nome.value='';
+                idade.value='';
+                nome.focus();
+                res.appendChild(div);
+                });
+            } else {
+                window.alert('Idade inválida')
+            }
+        } else {
+            window.alert('Digite um nome!')
+        }
+    })
+
 </script>
 </html>
