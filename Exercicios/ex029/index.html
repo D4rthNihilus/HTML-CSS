@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício sobre Classes</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #machine{
+            width: 97vw;
+            height: 310px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        #features{
+            width: 35vw;
+            height: 285px;
+            background-color: rgb(216, 213, 213);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 15px;
+            border-radius: 20px;
+        }
+
+        #features input, label{
+            width: 250px;
+            border-radius: 10px;
+            border: none;
+            padding: 5px;
+            flex-shrink: 1fr;
+        }
+
+        #cores {
+            width: 30vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5px 0px;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .cor{
+            width: 50px;
+            height: 20px;
+            border-radius: 5px;
+            border: 2px solid rgb(110, 109, 109);
+        }
+
+        .cor:hover {
+            border: 2px solid rgb(255, 217, 0);
+        }
+
+        #red {
+            background-color: red;
+        }
+        #white {
+            background-color: white;
+        }
+        #black {
+            background-color: black;
+        }
+        #gray {
+            background-color: gray;
+        }
+        #blue {
+            background-color: blue;
+        }
+        #green {
+            background-color: green;
+        }
+        
+
+        #radio {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px 0px;
+            width: 100%;
+        }
+
+         #radio > div > input, label {
+            width: 50px;
+            height: 20px;
+            text-align: center;
+        }
+
+        #carpic{
+            width: 40vw;
+            height: 290px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #carpic img{
+            width: 200px;
+        }
+
+        #button{
+            width: 210px;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            font-size: 1.5em;
+            font-weight: bolder;
+            color: white;
+            background-color: rgb(42, 39, 70);
+        }
+
+        #button:hover {
+            background-color: black;
+        }
+
+        #result{
+            width: 90vw;
+            margin: 10px auto;
+            border: 1px solid black;
+            border-radius: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #result div {
+            margin: 10px;
+            font-size: 0.8em;
+        }
+
+        #result div > div img {
+            max-width: 70px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="machine">
+        <div id="features">
+            <label for="nome">Nome:</label>
+            <br>
+            <input type="text" id='nome'>
+            <br>
+            <label for="portas">Portas:</label>
+            <br>
+            <input type="number" id='portas'>
+            <br>
+            <label for="municao">Munição:</label>
+            <br>
+            <input type="number" id='municao' disabled>
+            <br>
+            <label for="blindagem">Cor:</label>
+            <br>
+            <div id="cores">
+                <div id="red" class="cor"></div>
+                <div id="white" class="cor"></div>
+                <div id="black" class=cor></div>
+                <div id="gray" class="cor"></div>
+                <div id="green" class="cor"></div>
+                <div id="blue" class="cor"></div>
+            </div>
+            <br>
+            <div id="radio">
+                <div>
+                    <input type="radio" name='tipo' id="militar">
+                    <label for="tipo">Militar</label>
+                </div>
+                <br>
+                <div>
+                    <input type="radio" name="tipo" id="normal" checked>
+                    <label for="tipo">Normal</label>
+                </div>
+            </div>
+        </div>
+        <div id="carpic">
+            <img src="https://png.pngtree.com/png-vector/20241204/ourmid/pngtree-red-suv-car-front-view-png-image_14575043.png" alt="carro" id="carro">
+            <button id="button">Adicionar</button>
+        </div>
+
+    </div>
+    <div id="result">
+        
+    </div>
+</body>
+<script>
+    const carro = document.getElementById('carro');
+    const radiom = document.getElementById('militar');
+    const nome=document.getElementById('nome');
+    const portas = document.getElementById('portas');
+    const municao =document.getElementById('municao');
+    const result = document.getElementById('result');
+    const add = document.getElementById('button');
+
+    const red = document.getElementById('red');
+    const white = document.getElementById('white');
+    const black= document.getElementById('black');
+    const gray = document.getElementById('gray');
+    const green = document.getElementById('green');
+    const blue = document.getElementById('blue');
+
+    const colors = [red, white, black, gray, green, blue];
+    colors.map((e)=>{
+         e.addEventListener('click', ()=>{
+            if(!radiom.checked==true){
+                //CORES DOS CARROS NORMAIS
+                if(e==red){
+                    carro.setAttribute('src', 'https://png.pngtree.com/png-vector/20241204/ourmid/pngtree-red-suv-car-front-view-png-image_14575043.png');
+                } else if(e==white) {
+                    carro.setAttribute('src','https://thumbs.dreamstime.com/b/sleek-sustainable-white-futuristic-sports-car-high-tech-showcased-background-featuring-monochromatic-figures-eco-299936168.jpg')
+                }
+                else if(e==black) {
+                    carro.setAttribute('src','https://png.pngtree.com/png-clipart/20250108/original/pngtree-contemporary-black-car-image-for-commercial-use-png-image_19953279.png')
+             }
+                else if(e==gray) {
+                    carro.setAttribute('src','https://img.freepik.com/psd-gratuitas/carro-moderno-isolado_23-2151504570.jpg?semt=ais_hybrid&w=740&q=80')
+                }
+                else if(e==green) {
+                    carro.setAttribute('src','https://file.aiquickdraw.com/imgcompressed/img/compressed_65d82c15b0ed9845dec3ed106b232b79.webp')
+                }
+                else if(e==blue) {
+                    carro.setAttribute('src','https://png.pngtree.com/png-clipart/20231011/original/pngtree-blue-sports-car-png-png-image_13294722.png')
+                }
+                //CORES DOS CARROS MILITARES
+            } else {
+                if(e==red){
+                    carro.setAttribute('src', 'https://img.freepik.com/premium-vector/himars-fmtv-with-trailer-covers-sand-color-realistic-style-m142-high-mobility-artillery-rocket_1072070-474.jpg?semt=ais_hybrid&w=740&q=80');
+                } else if(e==white) {
+                    carro.setAttribute('src','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9v3WFB3PYPTQ409JJXZ-7lHuj4bmxkco5g&s')
+                }
+                else if(e==black) {
+                    carro.setAttribute('src','https://static.vecteezy.com/system/resources/thumbnails/055/438/504/small/black-military-vehicle-featuring-a-mounted-weapon-free-png.png')
+             }
+                else if(e==gray) {
+                    carro.setAttribute('src','https://png.pngtree.com/png-clipart/20241119/original/pngtree-military-vehicle-deliveries-green-army-truck-on-the-white-background-png-image_17233570.png')
+                }
+                else if(e==green) {
+                    carro.setAttribute('src','https://file.aiquickdraw.com/imgcompressed/img/compressed_ac4f95afed3e341d0200124bfe5d44db.webp')
+                }
+                else if(e==blue) {
+                    carro.setAttribute('src','https://static.vecteezy.com/system/resources/previews/060/504/669/non_2x/a-military-armored-vehicle-designed-for-transport-and-protection-photo.jpeg')
+                }
+            }
+         })
+    });
+
+    radio.addEventListener('click', ()=>{
+        if(radiom.checked==true){
+            carro.setAttribute('src', 'https://file.aiquickdraw.com/imgcompressed/img/compressed_ac4f95afed3e341d0200124bfe5d44db.webp');
+            municao.removeAttribute('disabled', 'true');
+            red.style.backgroundColor='#755F4E';
+            white.style.backgroundColor='#E9DED0';
+            black.style.backgroundColor='#080808';
+            gray.style.backgroundColor='#58772d';
+            green.style.backgroundColor='#87872c';
+            blue.style.backgroundColor='#34528e';
+
+        } else {
+            carro.setAttribute('src', 'https://png.pngtree.com/png-vector/20241204/ourmid/pngtree-red-suv-car-front-view-png-image_14575043.png');
+            municao.setAttribute('disabled', 'true');
+            red.style.backgroundColor='red';
+            white.style.backgroundColor='white';
+            black.style.backgroundColor='black';
+            gray.style.backgroundColor='gray';
+            green.style.backgroundColor='green';
+            blue.style.backgroundColor='blue';
+            
+        }
+    } );
+
+    class Carro {
+        constructor(nome, portas){
+            this.nome=nome;
+            this.portas=portas;
+        }
+
+        getName=function(){
+            return this.nome;
+        }
+        getPortas=function(){
+            return this.portas;
+        }
+        setNome=function(nome){
+            this.nome = nome;
+        }
+        setPortas=function(portas){
+            this.portas=portas;
+        }
+    }
+
+    class Militar extends Carro {
+        constructor(nome, portas, municao){
+            super(nome, portas);
+            this.municao=municao
+        }
+
+        getMunicao=function(){
+            return this.municao;
+        }
+        setMunicao=function(municao){
+            this.municao = municao;
+        }
+    }
+
+    let carros = [];
+
+    add.addEventListener('click', ()=>{
+        if(nome.value==''){
+            alert('Digite o nome do carro!')
+        } else if (portas.value=='' || portas.value<=0 || portas.value>8) {
+            alert ('Digite um número de portas válido!')
+        } else {
+            if(!radiom.checked==true){
+                let ncf = new Carro(nome.value,portas.value);
+                let newCar = document.createElement('div');
+                newCar.innerHTML=`
+                <div><img src='${carro.getAttribute('src')}'></div>
+                <p>Nome: ${ncf.nome} <br> Portas: ${ncf.portas}</p>`
+                result.appendChild(newCar);
+            } else {
+                if(municao.value==''){
+                    municao.value=0;
+                }
+                else {
+                    let ncf = new Militar(nome.value,portas.value, municao.value);
+                    let newCar = document.createElement('div');
+                    newCar.innerHTML=`
+                    <div><img src='${carro.getAttribute('src')}'></div>
+                    <p>Nome: ${ncf.nome} <br> Portas: ${ncf.portas} <br> Municao: ${ncf.municao}</p>`
+                    result.appendChild(newCar);
+                }
+            }
+            nome.value='';
+            nome.focus();
+            portas.value='';
+            municao.value='0';
+
+        } 
+    })
+
+</script>
+</html>

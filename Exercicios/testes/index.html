@@ -86,29 +86,27 @@
     <div class='res'></div>
 </body>
 <script> 
-    class Pessoa{
-        constructor(nome, idade){
-            this.nome=nome;
-            this.idade=idade;
-        }
+    const Pessoa = {
+        nome:'',
+        idade:'',
 
-        getNome(){
-            return this.nome;
-        }
+        getNome:function(){
+            return this.nome
+        },
 
-        getIdade(){
-            return this.idade;
-        }
+        getIdade:function(){
+            return this.idade
+        },
 
-        setNome(nome){
-            this.nome = nome;
-        }
+        setNome:function(nome){
+            this.nome = nome
+        },
 
-        setIdade(idade){
+        setIdade:function(idade){
             this.idade = idade;
-        }
+        },
 
-        info() {
+        info:function() {
             console.log(`Nome: ${this.nome}`);
             console.log(`Idade: ${this.idade}`);
             console.log(`......................`);
@@ -126,8 +124,10 @@
 
         if(nome.value!=''){
             if(idade.value!='' && idade.value*1>=0 && idade.value<=120){
-                const p = new Pessoa(nome.value, idade.value);
-                pessoas.push(p);
+                
+                Pessoa.setNome(nome.value);
+                Pessoa.setIdade(idade.value);
+                pessoas.push(Pessoa);
 
                 res.innerHTML='';
 
